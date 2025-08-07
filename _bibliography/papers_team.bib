@@ -5,12 +5,11 @@
       author={Milan Gritta and Huiyin Xue and Gerasimos Lampouras},
       abstract={Speculative decoding (SD) accelerates Large Language Model (LLM) generation by using an efficient draft model to propose the next few tokens, which are verified by the LLM in a single forward call, reducing latency while preserving its outputs. We focus on retrieval-based SD where the draft model retrieves the next tokens from a non-parametric datastore. Sparse retrieval (CITATION)REST], which operates on the surface form of strings, is currently the dominant paradigm due to its simplicity and scalability. However, its effectiveness is limited due to the usage of short contexts and exact string matching. Instead, we introduce Dense Retrieval for Speculative Decoding (DReSD), a novel framework that uses approximate nearest neighbour search with contextualised token embeddings to retrieve the most semantically relevant token sequences for SD. Extensive experiments show that DReSD achieves (on average) 87{\%} higher acceptance rates, 65{\%} longer accepted tokens and 19{\%} faster generation speeds compared to sparse retrieval (REST).},
       abbr={ACL},
-      journal={In Findings of the Association for Computational Linguistics - ACL},
-      year={2025},
+	  journal={In Findings of the Association for Computational Linguistics - ACL},
+	  year={2025},
       arxiv={2502.15572},
 	  bibtex_show={true},
 	  code={https://github.com/huawei-noah/HEBO/tree/DReSD},
-      selected={true}
 }
 
 @article{christopoulou2024sparsepocontrollingpreferencealignment,
@@ -23,7 +22,6 @@
       arxiv={2410.05102},
 	  bibtex_show={true},
 	  code={https://github.com/huawei-noah/HEBO/tree/master/SparsePO},
-      selected={true}
 }
 
 @article{zimmer2024mixtureattentionsspeculativedecoding,
@@ -46,7 +44,6 @@
       year={2024},
       arxiv={2407.09450},
 	  bibtex_show={true},
-      selected={true}
 }
 
 @article{gee2024codeoptimiseselfgeneratedpreferencedata,
@@ -70,7 +67,6 @@
   bibtex_show={true},
   arxiv={2402.05783},
   code={https://github.com/huawei-noah/noah-research/tree/master/NLP/text2code_mrpt},
-  selected={true},
 }
 
 @article{gritta2024humanrankevalautomaticevaluationlms,
@@ -118,117 +114,6 @@
       bibtex_show={true},
 }
 
-
-@article{galanis2009open,
-  title={An open-source natural language generator for OWL ontologies and its use in Prot{\'e}g{\'e} and Second Life},
-  author={Galanis, Dimitrios and Karakatsiotis, George and Lampouras, Gerasimos and Androutsopoulos, Ion},
-  abstract={We demonstrate an open-source natural language generation engine that produces descriptions of entities and classes in English and Greek from OWL ontologies that have been annotated with linguistic and user modeling information expressed in RDF. We also demonstrate an accompanying plug-in for the Proteg´ e ontology editor, which can be used to create the ontology’s annotations and generate previews of the resulting texts by invoking the generation engine. The engine has been embedded in robots acting as museum tour guides in the physical world and in Second Life; here we demonstrate the latter application.},
-  abbr={EACL},
-  journal={In Proceedings of the European Chapter of the Association for Computational Linguistics (EACL)},
-  year={2009},
-  pdf={https://aclanthology.org/E09-2005.pdf},
-  bibtex_show={true},
-}
-
-@article{androutsopoulos2013generating,
-  title={Generating natural language descriptions from OWL ontologies: the NaturalOWL system},
-  author={Androutsopoulos, Ion and Lampouras, Gerasimos and Galanis, Dimitrios},
-  abstract={We present NaturalOWL, a natural language generation system that produces texts describing individuals or classes of OWL ontologies. Unlike simpler OWL verbalizers, which typically express a single axiom at a time in controlled, often not entirely fluent natural language primarily for the benefit of domain experts, we aim to generate fluent and coherent multi-sentence texts for end-users. With a system like NaturalOWL, one can publish information in OWL on the Web, along with automatically produced corresponding texts in multiple languages, making the information accessible not only to computer programs and domain experts, but also end-users. We discuss the processing stages of NaturalOWL, the optional domain-dependent linguistic resources that the system can use at each stage, and why they are useful. We also present trials showing that when the domain-dependent llinguistic resources are available, NaturalOWL produces significantly better texts compared to a simpler verbalizer, and that the resources can be created with relatively light effort.},
-  abbr={JAIR},
-  journal={Journal of Artificial Intelligence Research},
-  year={2013},
-  arxiv={1405.6164},
-  bibtex_show={true},
-}
-
-@article{galanis2012extractive,
-  title={Extractive multi-document summarization with integer linear programming and support vector regression},
-  author={Galanis, Dimitrios and Lampouras, Gerasimos and Androutsopoulos, Ion},
-  abstract={We present a new method to generate extractive multi-document summaries. The method uses Integer Linear Programming to jointly maximize the importance of the sentences it includes in the summary and their diversity, without exceeding a maximum allowed summary length. To obtain an importance score for each sentence, it uses a Support Vector Regression model trained on human-authored summaries, whereas the diversity of the selected sentences is measured as the number of distinct word bigrams in the resulting summary. Experimental results on widely used benchmarks show that our method achieves state of the art results, when compared to competitive extractive summarizers, while being computationally efficient as well.},
-  abbr={COLING},
-  journal={In Proceedings of the International Conference on Computational Linguistics (COLING)},
-  year={2012},
-  pdf={https://aclanthology.org/C12-1056.pdf},
-  bibtex_show={true},
-}
-
-@article{lampouras2013using,
-  title={Using integer linear programming for content selection, lexicalization, and aggregation to produce compact texts from OWL ontologies},
-  author={Lampouras, Gerasimos and Androutsopoulos, Ion},
-  abstract={We present an Integer Linear Programming model of content selection, lexicalization, and aggregation that we developed for a system that generates texts from OWL ontologies. Unlike pipeline architectures, our model jointly considers the available choices in these three text generation stages, to avoid greedy decisions and produce more compact texts. Experiments with two ontologies confirm that it leads to more compact texts, compared to a pipeline with the same components, with no deterioration in the perceived quality of the generated texts. We also present an approximation of our model, which allows longer texts to be generated efficiently.},
-  abbr={ENLG},
-  journal={In Proceedings of the 14th European Workshop on Natural Language Generation (ENLG)},
-  year={2013},
-  pdf={https://aclanthology.org/W13-2106.pdf},
-  bibtex_show={true},
-}
-
-@article{lampouras2013using,
-  title={Using integer linear programming in concept-to-text generation to produce more compact texts},
-  author={Lampouras, Gerasimos and Androutsopoulos, Ion},
-  abstract={We present an ILP model of concept-totext generation. Unlike pipeline architectures, our model jointly considers the choices in content selection, lexicalization, and aggregation to avoid greedy decisions and produce more compact texts.},
-  abbr={ACL},
-  journal={In Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL - Short Papers)},
-  year={2013},
-  pdf={https://aclanthology.org/P13-2100.pdf},
-  bibtex_show={true},
-}
-
-@article{lampouras2009finding,
-  title={Finding short definitions of terms on web pages},
-  author={Lampouras, Gerasimos and Androutsopoulos, Ion},
-  abstract={We present a system that finds short definitions of terms on Web pages. It employs a Maximum Entropy classifier, but it is trained on automatically generated examples; hence, it is in effect unsupervised. We use ROUGE-W to generate training examples from encyclopedias and Web snippets, a method that outperforms an alternative centroid-based one. After training, our system can be used to find definitions of terms that are not covered by encyclopedias. The system outperforms a comparable publicly available system, as well as a previously published form of our system.},
-  abbr={EMNLP},
-  journal={In Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)},
-  year={2009},
-  pdf={https://aclanthology.org/D09-1132.pdf},
-  bibtex_show={true},
-}
-
-@article{konstantopoulos2009adaptive,
-  title={Adaptive natural language interaction},
-  author={Konstantopoulos, Stasinos and Tegos, Athanasios and Bilidas, Dimitrios and Androutsopoulos, Ion and Lampouras, Gerasimos and Matheson, Colin and Deroo, Olivier and Malakasiotis, Prodromos},
-  abstract={The subject of this demonstration is natural language interaction, focusing on adaptivity and profiling of the dialogue management and the generated output (text and speech). These are demonstrated in a museum guide use-case, operating in a simulated environment. The main technical innovations presented are the profiling model, the dialogue and action management system, and the text generation and speech synthesis systems.},
-  abbr={EACL-Demos},
-  journal={In Proceedings of the Demonstrations Session at EACL},
-  year={2009},
-  pdf={https://aclanthology.org/E09-2010.pdf},
-  bibtex_show={true},
-}
-
-@article{karkaletsis2012natural,
-  title={Natural interaction with personality and dialogue enabled robots},
-  author={Karkaletsis, Vangelis and Konstantopoulos, Stasinos and Bilidas, Dimitris and Androutsopoulos, I and Lampouras, G and Malakasiotis, P and Trahanias, P and Baltzakis, H},
-  abstract={The subject of this demonstration is natural human robot interaction. More specifically we demonstrate specific technological advancements that enable robots to perceive and understand natural human behavior as well as to act in ways that are familiar to humans. The demonstration is built around a museum guide use-case, where a simulated robotic guide is operating in a virtual environment. During the demonstration visitors are able to interact with the simulated robot using natural language and gestures. At the same time, videos of a real robot operating in a real museum are also demonstrated. Both the real and the simulated robot are using the same software components.},
-  abbr={SETN},
-  journal={In Proceedings of the Hellenic Artificial Intelligence Conference (SETN).},
-  year={2012},
-  bibtex_show={true},
-}
-
-@article{karakatsiotis2008naturalowl,
-  title={NaturalOWL: Generating texts from OWL ontologies in Prot{\'e}g{\'e} and in Second Life},
-  author={Karakatsiotis, George and Galanis, Dimitrios and Lampouras, Gerasimos and Androutsopoulos, Ion},
-  abstract={NaturalOWL is an open-source natural language generation engine written in Java. It produces descriptions of individuals (e.g., items for sale, museum exhibits) and classes (e.g., types of exhibits) in English and Greek from OWL DL ontologies. The ontologies must have been annotated in RDF with linguistic and user modeling resources. We demonstrate a plug-in for Protege that can be used to produce these resources and to generate texts by invoking NaturalOWL. We also demonstrate how NaturalOWL can be used by robotic avatars in Second Life to describe the exhibits of virtual museums. NaturalOWL demonstrates the benefits of Natural Language Generation (NLG) on the Semantic Web. Organizations that need to publish information about objects, such as exhibits or products, can publish OWL ontologies instead of texts. NLG engines, embedded in browsers or Web servers, can then render the ontologies in multiple natural languages, whereas computer programs may access the ontologies directly.},
-  booktitle={System demonstration, 18th European Conference on Artificial Intelligence},
-  abbr={ECAI-Demos},
-  journal={In Proceedings of the European Conference on Artificial Intelligence (ECAI - Demos).},
-  year={2008},
-  bibtex_show={true},
-}
-
-
-@article{lampouras2016imitation,
-  title={Imitation learning for language generation from unaligned data},
-  author={Lampouras, Gerasimos and Vlachos, Andreas},
-  abstract={Natural language generation (NLG) is the task of generating natural language from a meaning representation. Current rule-based approaches require domain-specific and manually constructed linguistic resources, while most machine-learning based approaches rely on aligned training data and/or phrase templates. The latter are needed to restrict the search space for the structured prediction task defined by the unaligned datasets. In this work we propose the use of imitation learning for structured prediction which learns an incremental model that handles the large search space by avoiding explicit enumeration of the outputs. We focus on the Locally Optimal Learning to Search framework which allows us to train against non-decomposable loss functions such as the BLEU or ROUGE scores while not assuming gold standard alignments. We evaluate our approach on three datasets using both automatic measures and human judgements and achieve results comparable to the state-of-the-art approaches developed for each of them.},
-  abbr={COLING},
-  journal={In Proceedings of the International Conference on Computational Linguistics (COLING).},
-  year={2016},
-  pdf={https://aclanthology.org/C16-1105.pdf},
-  bibtex_show={true},
-}
-
 @article{gritta2021conversation,
   title={Conversation graph: Data augmentation, training, and evaluation for non-deterministic dialogue management},
   author={Gritta, Milan and Lampouras, Gerasimos and Iacobacci, Ignacio},
@@ -240,97 +125,6 @@
   bibtex_show={true},
 }
 
-@article{zhou2020webnlg,
-  title={WebNLG challenge 2020: Language agnostic delexicalisation for multilingual RDF-to-text generation},
-  author={Zhou, Giulio and Lampouras, Gerasimos},
-  abstract={This paper presents our submission to the WebNLG Challenge 2020 for the English and Russian RDF-to-text generation tasks. Our first of three submissions is based on Language Agnostic Delexicalisation, a novel delexicalisation method that match values in the input to their occurrences in the corresponding text through comparison of pretrained multilingual embeddings, and employs a character-level post-editing model to inflect words in their correct form during relexicalisation. Our second submission forfeits delexicalisation and uses SentencePiece subwords as basic units. Our third submission combines the previous two by alternating between the output of the delexicalisation-based system when the input contains unseen entities and/or properties and the output of the SentencePiece-based system when the input is seen during training.},
-  abbr={WebNLG+},
-  journal={In Proceedings of the 3rd International Workshop on Natural Language Generation from the Semantic Web (WebNLG+).},
-  year={2020},
-  pdf={https://aclanthology.org/2020.webnlg-1.22.pdf},
-  bibtex_show={true},
-}
-
-
-@article{lampouras2018generating,
-  title={Generating Texts with Integer Linear Programming},
-  author={Lampouras, Gerasimos and Androutsopoulos, Ion},
-  abstract={Concept-to-text generation typically employs a pipeline architecture, which often leads to suboptimal texts. Content selection, for example, may greedily select the most important facts, which may require, however, too many words to express, and this may be undesirable when space is limited or expensive. Selecting other facts, possibly only slightly less important, may allow the lexicalization stage to use much fewer words, or to report more facts in the same space. Decisions made during content selection and lexicalization may also lead to more or fewer sentence aggregation opportunities, affecting the length and readability of the resulting texts. Building upon on a publicly available state of the art natural language generator for Semantic Web ontologies, this article presents an Integer Linear Programming model that, unlike pipeline architectures, jointly considers choices available in content selection, lexicalization, and sentence aggregation to avoid greedy local decisions and produce more compact texts, i.e., texts that report more facts per word. Compact texts are desirable, for example, when generating advertisements to be included in Web search results, or when summarizing structured information in limited space. An extended version of the proposed model also considers a limited form of referring expression generation and avoids redundant sentences. An approximation of the two models can be used when longer texts need to be generated. Experiments with three ontologies confirm that the proposed models lead to more compact texts, compared to pipeline systems, with no deterioration or with improvements in the perceived quality of the generated texts.},
-  abbr={arXiv},
-  journal={arXiv pre-print},
-  year={2018},
-  arxiv={1811.00051},
-  bibtex_show={true},
-}
-
-@article{lampouras2017sheffield,
-  title={Sheffield at SemEval-2017 Task 9: Transition-based language generation from AMR.},
-  author={Lampouras, Gerasimos and Vlachos, Andreas},
-  abstract={This paper describes the submission by the University of Sheffield to the SemEval 2017 Abstract Meaning Representation Parsing and Generation task (SemEval 2017 Task 9, Subtask 2). We cast language generation from AMR as a sequence of actions (e.g., insert/remove/rename edges and nodes) that progressively transform the AMR graph into a dependency parse tree. This transition-based approach relies on the fact that an AMR graph can be considered structurally similar to a dependency tree, with a focus on content rather than function words. An added benefit to this approach is the greater amount of data we can take advantage of to train the parse-to-text linearizer. Our submitted run on the test data achieved a BLEU score of 3.32 and a Trueskill score of -22.04 on automatic and human evaluation respectively.},
-  abbr={SemEval},
-  journal={In Proceedings of the International Workshop on Semantic Evaluation (SemEval)},
-  year={2017},
-  pdf={https://aclanthology.org/S17-2096.pdf},
-  bibtex_show={true},
-}
-
-@proceedings{martins2019proceedings,
-  title={Proceedings of the Third Workshop on Structured Prediction for NLP},
-  author={Martins, Andr{\'e} FT and Vlachos, Andreas and Kozareva, Zornitsa and Ravi, Sujith and Lampouras, Gerasimos and Niculae, Vlad and Kreutzer, Julia},
-  abbr={NAACL},
-  year={2019},
-  pdf={https://aclanthology.org/W19-1500.pdf},
-  bibtex_show={true},
-}
-
-@proceedings{agrawal2020proceedings,
-  title={Proceedings of the Fourth Workshop on Structured Prediction for NLP},
-  author={Agrawal, Priyanka and Kozareva, Zornitsa and Kreutzer, Julia and Lampouras, Gerasimos and Martins, Andr{\'e} FT and Ravi, Sujith and Vlachos, Andreas},
-  abbr={EMNLP},
-  year={2020},
-  pdf={https://aclanthology.org/2020.spnlp-1.0.pdf},
-  bibtex_show={true},
-}
-
-@proceedings{vlachos2022proceedings,
-  title={Proceedings of the Sixth Workshop on Structured Prediction for NLP},
-  author={Vlachos, Andreas and Agrawal, Priyanka and Martins, Andr{\'e} FT and Lampouras, Gerasimos and Lyu, Chunchuan},
-  abbr={ACL},
-  year={2022},
-  pdf={https://aclanthology.org/2022.spnlp-1.pdf},
-  bibtex_show={true},
-}
-
-@proceedings{scichat-2024-simulating,
-    title ={Proceedings of the 1st Workshop on Simulating Conversational Intelligence in Chat (SCI-CHAT 2024)},
-    author={Graham, Yvette and Liu, Qun and Lampouras, Gerasimos and Iacobacci, Ignacio and Madden, Sinead and Khalid, Haider and Qureshi, Rameez},
-    abbr={EACL},
-    year = {2024},
-    pdf={https://aclanthology.org/2024.scichat-1.pdf},
-    bibtex_show={true},
-}
-
-
-@article{chen2018sheffield,
-  title={Sheffield at e2e: structured prediction approaches to end-to-end language generation},
-  author={Chen, Mingje and Lampouras, Gerasimos and Vlachos, Andreas},
-  abstract={We describe the two systems, and their variations, that were submitted by the University of Shefﬁeld to the E2E NLG challenge. Our systems consist of different approaches to structured prediction for end-to-end language generation. Our ﬁrst submitted system employs imitation learning for structured prediction to explore the large search space without explicitly enumerating it. Our second submitted sys-tem uses encoder-decoder architectures to generate sequences of words. Our submitted runs for each system achieved BLEU scores of 0 . 60 and 0 . 54 respectively. On human evaluation our imitation learning model were placed in the 2nd best quality and 3rd best naturalness clusters according to Trueskill scores, while our encoder-decoder model was the best performing system on naturalness but on quality it was placed in the 5th best cluster.},
-  abbr={SemEval},
-  journal={In Proceedings of the E2E NLG Challenge System Descriptions},
-  year={2018},
-  bibtex_show={true},
-}
-
-@article{lampouras2018extracting,
-  title={Extracting linguistic resources from the web for concept-to-text generation},
-  author={Lampouras, Gerasimos and Androutsopoulos, Ion},
-  abstract={Many concept-to-text generation systems require domain-specific linguistic resources to produce high quality texts, but manually constructing these resources can be tedious and costly. Focusing on NaturalOWL, a publicly available state of the art natural language generator for OWL ontologies, we propose methods to extract from the Web sentence plans and natural language names, two of the most important types of domain-specific linguistic resources used by the generator. Experiments show that texts generated using linguistic resources extracted by our methods in a semi-automatic manner, with minimal human involvement, are perceived as being almost as good as texts generated using manually authored linguistic resources, and much better than texts produced by using linguistic resources extracted from the relation and entity identifiers of the ontology.},
-  abbr={arXiv},
-  journal={arXiv pre-print},
-  year={2018},
-  arxiv={1810.13414},
-  bibtex_show={true},
-}
 
 @article{gordon2020show,
   title={Show us the way: Learning to manage dialog from demonstrations},
@@ -430,6 +224,196 @@
   journal={In Findings of the Association for Computational Linguistics - EMNLP},
   year={2023},
   arxiv={2310.13669},
-  bibtex_show={true},
-  selected={true}
+  bibtex_show={true}
+}
+
+@article{hu-etal-2023-multi-3,
+    title = {Multi3WOZ: A Multilingual, Multi-Domain, Multi-Parallel Dataset for Training and Evaluating Culturally Adapted Task-Oriented Dialog Systems},
+    author = {Songbo and
+      Zhou, Han  and
+      Hergul, Mete  and
+      Gritta, Milan  and
+      Zhang, Guchun  and
+      Iacobacci, Ignacio  and
+      Vuli{\'c}, Ivan  and
+      Korhonen, Anna},
+	abstract={Creating high-quality annotated data for task-oriented dialog (ToD) is known to be notoriously difficult, and the challenges are amplified when the goal is to create equitable, culturally adapted, and large-scale ToD datasets for multiple languages. Therefore, the current datasets are still very scarce and suffer from limitations such as translation-based non-native dialogs with translation artefacts, small scale, or lack of cultural adaptation, among others. In this work, we first take stock of the current landscape of multilingual ToD datasets, offering a systematic overview of their properties and limitations. Aiming to reduce all the detected limitations, we then introduce Multi3WOZ, a novel multilingual, multi-domain, multi-parallel ToD dataset. It is large-scale and offers culturally adapted dialogs in 4 languages to enable training and evaluation of multilingual and cross-lingual ToD systems. We describe a complex bottom-up data collection process that yielded the final dataset, and offer the first sets of baseline scores across different ToD-related tasks for future reference, also highlighting its challenging nature.},
+	abbr={TACL},
+    journal = {In Transactions of the Association for Computational Linguistics},
+    year = {2023},
+    arxiv={2307.14031},
+    bibtex_show={true},
+}
+
+@article{hu-etal-2023-systematic,
+    title = {A Systematic Study of Performance Disparities in Multilingual Task-Oriented Dialogue Systems},
+    author = {Hu, Songbo  and
+      Zhou, Han  and
+      Yuan, Moy  and
+      Gritta, Milan  and
+      Zhang, Guchun  and
+      Iacobacci, Ignacio  and
+      Korhonen, Anna  and
+      Vuli{\'c}, Ivan},
+    abstract = {Achieving robust language technologies that can perform well across the world{'}s many languages is a central goal of multilingual NLP. In this work, we take stock of and empirically analyse task performance disparities that exist between multilingual task-oriented dialogue (ToD) systems. We first define new quantitative measures of absolute and relative equivalence in system performance, capturing disparities across languages and within individual languages. Through a series of controlled experiments, we demonstrate that performance disparities depend on a number of factors: the nature of the ToD task at hand, the underlying pretrained language model, the target language, and the amount of ToD annotated data. We empirically prove the existence of the adaptation and intrinsic biases in current ToD systems: e.g., ToD systems trained for Arabic or Turkish using annotated ToD data fully parallel to English ToD data still exhibit diminished ToD task performance. Beyond providing a series of insights into the performance disparities of ToD systems in different languages, our analyses offer practical tips on how to approach ToD data collection and system development for new languages.},
+    abbr={EMNLP},
+    journal = {In Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+    year = {2023},
+    arxiv={2310.12892},
+    bibtex_show={true},
+}
+
+@article{valizadeh2024correctoptimalregularexpression,
+      title={Correct and Optimal: the Regular Expression Inference Challenge}, 
+      author={Mojtaba Valizadeh and Philip John Gorinski and Ignacio Iacobacci and Martin Berger},
+	  abstract = {We propose regular expression inference (REI) as a challenge for code/language modelling, and the wider machine learning community. REI is a supervised machine learning (ML) and program optimisation task, and poses the problem of finding minimal regular expressions from examples: Given two finite sets of strings P and N and a cost function cost(·), the task is to generate an expression r that accepts all strings in P and rejects all strings in N, while no other such expression r′ exists with cost(r′) < cost(r). REI has advantages as a challenge problem: (i) regular expressions are wellknown, widely used, and a natural idealisation of code; (ii) REI’s asymptotic worst-case complexity is well understood; (iii) REI has a small number of easy to understand parameters (e.g. P or N cardinality, string lengths of examples, or the cost function); this lets us easily finetune REI-hardness; (iv) REI, with its emphasis on optimisation, is an unsolved problem for deep learning based ML. Recently, an REI solver was implemented on GPUs, using program synthesis techniques. This enabled, for the first time, fast generation of minimal regular expressions for complex REI instances. Building on this advance, we generate and publish the first large-scale datasets for REI, and devise and evaluate several initial heuristic and machine learning baselines. We invite the community to participate and explore ML methods that learn to solve REI problems. We believe that progress in REI directly translates to progress in code/language modelling.},
+	  abbr={IJCAI},
+	  journal = {In Proceedings of the International Joint Conference on Artificial Intelligence},
+      year={2024},
+      arxiv={2308.07899},
+      bibtex_show={true},
+}
+
+@article{whitehouse2023entitycsimprovingzeroshotcrosslingual,
+      title={EntityCS: Improving Zero-Shot Cross-lingual Transfer with Entity-Centric Code Switching}, 
+      author={Chenxi Whitehouse and Fenia Christopoulou and Ignacio Iacobacci},
+	  abstract = {Accurate alignment between languages is fundamental for improving cross-lingual pre-trained language models (XLMs). Motivated by the natural phenomenon of code-switching (CS) in multilingual speakers, CS has been used as an effective data augmentation method that offers language alignment at the word- or phrase-level, in contrast to sentence-level via parallel instances. Existing approaches either use dictionaries or parallel sentences with word alignment to generate CS data by randomly switching words in a sentence. However, such methods can be suboptimal as dictionaries disregard semantics, and syntax might become invalid after random word switching. In this work, we propose EntityCS, a method that focuses on Entity-level Code-Switching to capture fine-grained cross-lingual semantics without corrupting syntax. We use Wikidata and English Wikipedia to construct an entity-centric CS corpus by switching entities to their counterparts in other languages. We further propose entity-oriented masking strategies during intermediate model training on the EntityCS corpus for improving entity prediction. Evaluation of the trained models on four entity-centric downstream tasks shows consistent improvements over the baseline with a notable increase of 10% in Fact Retrieval. We release the corpus and models to assist research on code-switching and enriching XLMs with external knowledge.},
+	  abbr={EMNLP},
+	  journal = {In Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+      year={2022},
+      arxiv={2210.12540},
+      bibtex_show={true},
+}
+
+@article{staliūnaitė2022relationalgraphconvolutionalneural,
+      title={Relational Graph Convolutional Neural Networks for Multihop Reasoning: A Comparative Study}, 
+      author={Ieva Staliūnaitė and Philip John Gorinski and Ignacio Iacobacci},
+	  abstract = {Multihop Question Answering is a complex Natural Language Processing task that requires multiple steps of reasoning to find the correct answer to a given question. Previous research has explored the use of models based on Graph Neural Networks for tackling this task. Various architectures have been proposed, including Relational Graph Convolutional Networks (RGCN). For these many node types and relations between them have been introduced, such as simple entity co-occurrences, modelling coreferences, or "reasoning paths" from questions to answers via intermediary entities. Nevertheless, a thoughtful analysis on which relations, node types, embeddings and architecture are the most beneficial for this task is still missing. In this paper we explore a number of RGCN-based Multihop QA models, graph relations, and node embeddings, and empirically explore the influence of each on Multihop QA performance on the WikiHop dataset.},
+	  abbr={arXiv},
+	  journal={arXiv pre-print},
+      year={2022},
+      arxiv={2210.06418},
+      bibtex_show={true},
+}
+
+@article{zhou2023xqadstmultidomainmultilingualdialogue,
+      title={XQA-DST: Multi-Domain and Multi-Lingual Dialogue State Tracking}, 
+      author={Han Zhou and Ignacio Iacobacci and Pasquale Minervini},
+	  abstract = {Dialogue State Tracking (DST), a crucial component of task-oriented dialogue (ToD) systems, keeps track of all important information pertaining to dialogue history: filling slots with the most probable values throughout the conversation. Existing methods generally rely on a predefined set of values and struggle to generalise to previously unseen slots in new domains. To overcome these challenges, we propose a domain-agnostic extractive question answering (QA) approach with shared weights across domains. To disentangle the complex domain information in ToDs, we train our DST with a novel domain filtering strategy by excluding out-of-domain question samples. With an independent classifier that predicts the presence of multiple domains given the context, our model tackles DST by extracting spans in active domains. Empirical results demonstrate that our model can efficiently leverage domain-agnostic QA datasets by two-stage fine-tuning while being both domain-scalable and open-vocabulary in DST. It shows strong transferability by achieving zero-shot domain-adaptation results on MultiWOZ 2.1 with an average JGA of 36.7%. It further achieves cross-lingual transfer with state-of-the-art zero-shot results, 66.2% JGA from English to German and 75.7% JGA from English to Italian on WOZ 2.0.},
+	  abbr={EACL},
+	  journal={In Findings of the Association for Computational Linguistics - EACL},
+	  year={2023},
+	  arxiv={2204.05895},
+	  bibtex_show={true}
+}
+
+@article{gritta2022crossalignercozeroshot,
+      title={CrossAligner & Co: Zero-Shot Transfer Methods for Task-Oriented Cross-lingual Natural Language Understanding}, 
+	  author={Milan Gritta and Ruoyu Hu and Ignacio Iacobacci},
+	  abstract = {Task-oriented personal assistants enable people to interact with a host of devices and services using natural language. One of the challenges of making neural dialogue systems available to more users is the lack of training data for all but a few languages. Zero-shot methods try to solve this issue by acquiring task knowledge in a high-resource language such as English with the aim of transferring it to the low-resource language(s). To this end, we introduce CrossAligner, the principal method of a variety of effective approaches for zero-shot cross-lingual transfer based on learning alignment from unlabelled parallel data. We present a quantitative analysis of individual methods as well as their weighted combinations, several of which exceed state-of-the-art (SOTA) scores as evaluated across nine languages, fifteen test sets and three benchmark multilingual datasets. A detailed qualitative error analysis of the best methods shows that our fine-tuned language models can zero-shot transfer the task knowledge better than anticipated.},
+      abbr={ACL},
+	  journal={In Findings of the Association for Computational Linguistics},
+	  year={2022},
+	  arxiv={2203.09982},
+	  bibtex_show={true}
+}
+
+@article{staliūnaitė2021improvingcommonsensecausalreasoning,
+      title={Improving Commonsense Causal Reasoning by Adversarial Training and Data Augmentation}, 
+      author={Ieva Staliūnaitė and Philip John Gorinski and Ignacio Iacobacci},
+	  abstract = {Determining the plausibility of causal relations between clauses is a commonsense reasoning task that requires complex inference ability. The general approach to this task is to train a large pretrained language model on a specific dataset. However, the available training data for the task is often scarce, which leads to instability of model training or reliance on the shallow features of the dataset. This paper presents a number of techniques for making models more robust in the domain of causal reasoning. Firstly, we perform adversarial training by generating perturbed inputs through synonym substitution. Secondly, based on a linguistic theory of discourse connectives, we perform data augmentation using a discourse parser for detecting causally linked clauses in large text, and a generative language model for generating distractors. Both methods boost model performance on the Choice of Plausible Alternatives (COPA) dataset, as well as on a Balanced COPA dataset, which is a modified version of the original data that has been developed to avoid superficial cues, leading to a more challenging benchmark. We show a statistically significant improvement in performance and robustness on both datasets, even with only a small number of additionally generated data points.},
+	  abbr={arXiv},
+	  journal={arXiv pre-print},
+      year={2021},
+      arxiv={2101.04966},
+      bibtex_show={true},
+}
+
+@article{Minixhofer_2021,
+	  title={Enhancing Transformers with Gradient Boosted Decision Trees for NLI Fine-Tuning},
+	  author={Minixhofer, Benjamin and Gritta, Milan and Iacobacci, Ignacio},
+	  abstract = {Transfer learning has become the dominant paradigm for many natural language processing tasks. In addition to models being pretrained on large datasets, they can be further trained on intermediate (supervised) tasks that are similar to the target task. For small Natural Language Inference (NLI) datasets, language modelling is typically followed by pretraining on a large (labelled) NLI dataset before fine-tuning with each NLI subtask. In this work, we explore Gradient Boosted Decision Trees (GBDTs) as an alternative to the commonly used Multi-Layer Perceptron (MLP) classification head. GBDTs have desirable properties such as good performance on dense, numerical features and are effective where the ratio of the number of samples w.r.t the number of features is low. We then introduce FreeGBDT, a method of fitting a GBDT head on the features computed during fine-tuning to increase performance without additional computation by the neural network. We demonstrate the effectiveness of our method on several NLI datasets using a strong baseline model (RoBERTa-large with MNLI pretraining). The FreeGBDT shows a consistent improvement over the MLP classification head.},
+      abbr={ACL},
+	  journal={In Findings of the Association for Computational Linguistics},
+	  year={2021},
+	  arxiv={2105.03791},
+	  bibtex_show={true}
+}
+   
+ @article{gritta2021xeroalignzeroshotcrosslingualtransformer,
+      title={XeroAlign: Zero-Shot Cross-lingual Transformer Alignment}, 
+      author={Milan Gritta and Ignacio Iacobacci},
+	  abstract = {Transfer learning has become the dominant paradigm for many natural language processing tasks. In addition to models being pretrained on large datasets, they can be further trained on intermediate (supervised) tasks that are similar to the target task. For small Natural Language Inference (NLI) datasets, language modelling is typically followed by pretraining on a large (labelled) NLI dataset before fine-tuning with each NLI subtask. In this work, we explore Gradient Boosted Decision Trees (GBDTs) as an alternative to the commonly used Multi-Layer Perceptron (MLP) classification head. GBDTs have desirable properties such as good performance on dense, numerical features and are effective where the ratio of the number of samples w.r.t the number of features is low. We then introduce FreeGBDT, a method of fitting a GBDT head on the features computed during fine-tuning to increase performance without additional computation by the neural network. We demonstrate the effectiveness of our method on several NLI datasets using a strong baseline model (RoBERTa-large with MNLI pretraining). The FreeGBDT shows a consistent improvement over the MLP classification head.},
+      abbr={ACL},
+	  journal={In Findings of the Association for Computational Linguistics},
+	  year={2021},
+	  arxiv={2105.02472},
+	  code={https://github.com/huawei-noah/noah-research/tree/master/xero_align},
+	  bibtex_show={true}
+}
+
+@article{staliūnaitė2020compositionallexicalsemanticsroberta,
+      title={Compositional and Lexical Semantics in RoBERTa, BERT and DistilBERT: A Case Study on CoQA}, 
+      author={Ieva Staliūnaitė and Ignacio Iacobacci},
+	  abstract = {Many NLP tasks have benefited from transferring knowledge from contextualized word embeddings, however the picture of what type of knowledge is transferred is incomplete. This paper studies the types of linguistic phenomena accounted for by language models in the context of a Conversational Question Answering (CoQA) task. We identify the problematic areas for the finetuned RoBERTa, BERT and DistilBERT models through systematic error analysis - basic arithmetic (counting phrases), compositional semantics (negation and Semantic Role Labeling), and lexical semantics (surprisal and antonymy). When enhanced with the relevant linguistic knowledge through multitask learning, the models improve in performance. Ensembles of the enhanced models yield a boost between 2.2 and 2.7 points in F1 score overall, and up to 42.1 points in F1 on the hardest question classes. The results show differences in ability to represent compositional and lexical information between RoBERTa, BERT and DistilBERT.},
+      abbr={EMNLP},
+      journal={In Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+	  year={2020},
+	  arxiv={2009.08257},
+	  bibtex_show={true}
+}
+
+@article{9053899,
+      title={Auxiliary Capsules for Natural Language Understanding}, 
+      author={Staliūnaitė, Ieva and Iacobacci, Ignacio},
+	  abstract = {Lately, joint training of Intent detection and Slot filling has become the best-performing approach in the field of Natural Language Understanding (NLU). In this work we extend the newly introduced application of Capsule Networks for NLU to a multi-task learning environment, using relevant auxiliary tasks. Specifically, our models perform joint Intent classification and Slot filling with the aid of Named Entity Recognition (NER) and Part of Speech (POS) tagging tasks. This allows us to exploit the hierarchical relationships between the Intents of the utterances and the different features of input text, not only Slots but also Named Entity mentions, Parts of Speech, quantity indications, etc. The models developed in this work are evaluated on standard benchmarks, achieving state-of-the-art results on the SNIPS dataset while outperforming the best commercial systems on several low-resource datasets.},
+      abbr={ICASSP},
+      journal={In Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing},
+	  year={2020},
+      pdf={https://ieeexplore.ieee.org/document/9053899},
+	  bibtex_show={true}
+}
+
+@article{kourdis2024alphavillearningleverageauxiliary,
+      title={αVIL: Learning to Leverage Auxiliary Tasks for Multitask Learning}, 
+      author={Rafael Kourdis and Gabriel Gordon-Hall and Philip John Gorinski},
+	  abstract = {Multitask Learning is a Machine Learning paradigm that aims to train a range of (usually related) tasks with the help of a shared model. While the goal is often to improve the joint performance of all training tasks, another approach is to focus on the performance of a specific target task, while treating the remaining ones as auxiliary data from which to possibly leverage positive transfer towards the target during training. In such settings, it becomes important to estimate the positive or negative influence auxiliary tasks will have on the target. While many ways have been proposed to estimate task weights before or during training they typically rely on heuristics or extensive search of the weighting space. We propose a novel method called α-Variable Importance Learning (\alphaVIL) that is able to adjust task weights dynamically during model training, by making direct use of task-specific updates of the underlying model's parameters between training epochs. Experiments indicate that \alphaVIL is able to outperform other Multitask Learning approaches in a variety of settings. To our knowledge, this is the first attempt at making direct use of model updates for task weight estimation.},
+	  abbr={arXiv},
+	  journal={arXiv pre-print},
+      year={2024},
+      arxiv={2405.07769},
+      bibtex_show={true},
+}
+
+@article{he2023graphattentionhierarchiesmultihop,
+      title={Graph Attention with Hierarchies for Multi-hop Question Answering}, 
+      author={Yunjie He and Philip John Gorinski and Ieva Staliunaite and Pontus Stenetorp},
+	  abstract = {Multi-hop QA (Question Answering) is the task of finding the answer to a question across multiple documents. In recent years, a number of Deep Learning-based approaches have been proposed to tackle this complex task, as well as a few standard benchmarks to assess models Multi-hop QA capabilities. In this paper, we focus on the well-established HotpotQA benchmark dataset, which requires models to perform answer span extraction as well as support sentence prediction. We present two extensions to the SOTA Graph Neural Network (GNN) based model for HotpotQA, Hierarchical Graph Network (HGN): (i) we complete the original hierarchical structure by introducing new edges between the query and context sentence nodes; (ii) in the graph propagation step, we propose a novel extension to Hierarchical Graph Attention Network GATH (Graph ATtention with Hierarchies) that makes use of the graph hierarchy to update the node representations in a sequential fashion. Experiments on HotpotQA demonstrate the efficiency of the proposed modifications and support our assumptions about the effects of model related variables.},
+	  abbr={arXiv},
+	  journal={arXiv pre-print},
+      year={2023},
+      arxiv={2301.11792},
+      bibtex_show={true},
+}
+
+@article{cowenrivers2022structuredqlearningantibodydesign,
+      title={Structured Q-learning For Antibody Design}, 
+      author={Alexander I. Cowen-Rivers and Philip John Gorinski and Aivar Sootla and Asif Khan and Liu Furui and Jun Wang and Jan Peters and Haitham Bou Ammar},
+	  abstract = {Multi-hop QA (Question Answering) is the task of finding the answer to a question across multiple documents. In recent years, a number of Deep Learning-based approaches have been proposed to tackle this complex task, as well as a few standard benchmarks to assess models Multi-hop QA capabilities. In this paper, we focus on the well-established HotpotQA benchmark dataset, which requires models to perform answer span extraction as well as support sentence prediction. We present two extensions to the SOTA Graph Neural Network (GNN) based model for HotpotQA, Hierarchical Graph Network (HGN): (i) we complete the original hierarchical structure by introducing new edges between the query and context sentence nodes; (ii) in the graph propagation step, we propose a novel extension to Hierarchical Graph Attention Network GATH (Graph ATtention with Hierarchies) that makes use of the graph hierarchy to update the node representations in a sequential fashion. Experiments on HotpotQA demonstrate the efficiency of the proposed modifications and support our assumptions about the effects of model related variables.},
+	  abbr={arXiv},
+	  journal={arXiv pre-print},
+      year={2022},
+      arxiv={2209.04698},
+      bibtex_show={true},
+}
+
+@article{gordonhall2020learningdialogpoliciesweak,
+      title={Learning Dialog Policies from Weak Demonstrations}, 
+      author={Gabriel Gordon-Hall and Philip John Gorinski and Shay B. Cohen},
+	  abstract = {Deep reinforcement learning is a promising approach to training a dialog manager, but current methods struggle with the large state and action spaces of multi-domain dialog systems. Building upon Deep Q-learning from Demonstrations (DQfD), an algorithm that scores highly in difficult Atari games, we leverage dialog data to guide the agent to successfully respond to a user's requests. We make progressively fewer assumptions about the data needed, using labeled, reduced-labeled, and even unlabeled data to train expert demonstrators. We introduce Reinforced Fine-tune Learning, an extension to DQfD, enabling us to overcome the domain gap between the datasets and the environment. Experiments in a challenging multi-domain dialog system framework validate our approaches, and get high success rates even when trained on out-of-domain data.},
+	  abbr={ACL},
+	  journal={In Proceedings of the Association for Computational Linguistics - ACL},
+      year={2020},
+      arxiv={2004.11054},
+      bibtex_show={true},
 }
