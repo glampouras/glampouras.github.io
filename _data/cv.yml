@@ -11,22 +11,29 @@
 
 - title: Short bio
   type: text
-  contents: Gerasimos (Makis) Lampouras is a Principal Research Scientist and currently serves as the Team Leader of the Speech and Language group in Huawei Noah’s Ark Lab, London. <br><br> Areas of interest generally fall somewhere between Natural Language Processing and Machine Learning, with his latest efforts focusing on the information seeking and synthesis capabilities of LLM-based Agents and on neuro-symbolic approaches for math and code reasoning. Briefly, his previous work has focused on LLM-based code synthesis and understanding, Natural Language Generation, Dialogue Systems, and overall Machine Learning applications for Natural Language Processing. <br><br> Formerly, he was a Research Associate at the University of Cambridge, University of Sheffield and University College London. He graduated and received his MSc and PhD from the Athens University of Economics and Business.
+  contents: Gerasimos (Makis) Lampouras is the Chief Scientific Officer at C Proof, London. Prior to this, he was a Principal Research Scientist and served as the Team Leader of the Speech and Language group in Huawei Noah’s Ark Lab, London. <br><br> Areas of interest generally fall somewhere between Natural Language Processing and Machine Learning, with his latest efforts focusing on the information seeking and synthesis capabilities of LLM-based Agents and on neuro-symbolic approaches for math and code reasoning. Briefly, his previous work has focused on LLM-based code synthesis and understanding, Natural Language Generation, Dialogue Systems, and overall Machine Learning applications for Natural Language Processing. <br><br> Formerly, he was a Research Associate at the University of Cambridge, University of Sheffield and University College London. He graduated and received his MSc and PhD from the Athens University of Economics and Business.
 
   
 - title: Experience
   type: time_table
   contents:
+    - title: Chief Scientific Officer
+      location: London, UK
+      institution: C Proof
+      year: 2026 - today
+      description:
+        - Leading research on automatic verification for code agents, building the runtime that ensures AI-generated code is correct and safe prior to execution. Spearheading technical strategy and domain applications, starting with quantitative finance.
+
     - title: Team Leader of the London NLP Team
       location: London, UK
       institution: Huawei Technologies Research & Development (UK) Ltd, London.
-      year: 2024 - today
+      year: 2024 - 2026
       description:
         - Leading a group of ~10 Senior Research Scientists and Engineers researching how to address current NLP and Large Language Models challenges, e.g. how to improve LLM's reasoning capabilities, LLM self-learning, LLM efficiency, LLMs for Programming Languages and Math, as well as related tasks.
     - title: Principal Research Scientist in NLP
       location: London, UK
       institution: Huawei Technologies Research & Development (UK) Ltd, London.
-      year: 2023 - today
+      year: 2023 - 2026
       description:
         - Research management and development of Code Language Models.
 
@@ -164,11 +171,14 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - Huawei Team Gold Medal Award
     - year: 2022
       items:
         - Huawei Innovation Pioneer Award
         - "For work on PanGu-Coder: Program synthesis with function-level language modeling"
-    - year: 2020, 2023
+    - year: 2020, 2023, 2025
       items:
         - Huawei Rising Star Awards
     - year: 2010-2013
@@ -183,7 +193,7 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> 
+    - <u>Hobbies:</u>
         Reading/writing fiction, 
         running TTRPGs, 
         game design.
