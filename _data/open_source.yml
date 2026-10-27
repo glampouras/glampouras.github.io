@@ -2,10 +2,14 @@
 # Each project: title, venue, description, links (label/url/icon) and papers (label/arxiv).
 # A project may also have subprojects (same fields), shown as subcards. A subproject's optional
 # `columns: N` lays its links out in an aligned N-column grid (single column on phones).
+# Optional: `tags` (list of topic chips); `featured: <label>` highlights the card, showing <label> above the title.
+# Link buttons are tinted automatically by destination (GitHub, Hugging Face, arXiv, other).
 # Icons: fa-solid fa-globe (website), fa-brands fa-github (code), fa-solid fa-database (dataset),
 #        fa-solid fa-trophy (leaderboard), fa-solid fa-toolbox (tool), fa-solid fa-cube (model)
 
 - title: Chelis
+  featured: Current project
+  tags: [formal verification, programming languages, AI agents]
   description: The verified tensor language for agent-written code.
   links:
     - label: Website
@@ -17,6 +21,7 @@
 
 - title: DeepSynth
   venue: ICLR 2026
+  tags: [AI agents, benchmark, information synthesis]
   description: A benchmark of 120 real-world tasks testing whether AI agents can gather, combine, and reason over information from multiple sources.
   links:
     - label: Website
@@ -36,6 +41,7 @@
       arxiv: 2602.21143
 
 - title: Formal Mathematical Reasoning
+  tags: [autoformalisation, theorem proving, Lean 4]
   description: Bridging natural language mathematics and machine-verifiable proofs through autoformalisation.
   links:
     - label: Website
@@ -83,6 +89,7 @@
 
 - title: DReSD
   venue: ACL Findings 2025
+  tags: [speculative decoding, dense retrieval, efficiency]
   description: Dense Retrieval for Speculative Decoding, using approximate nearest neighbour search over contextualised token embeddings.
   links:
     - label: Code
@@ -94,6 +101,7 @@
 
 - title: SparsePO
   venue: EMNLP Findings 2025
+  tags: [preference optimisation, alignment]
   description: Controlling preference alignment of LLMs via sparse token-level masks over KL divergence and reward.
   links:
     - label: Code
@@ -105,6 +113,7 @@
 
 - title: Text-to-Code MRPT
   venue: EACL 2024
+  tags: [code generation, pre-training]
   description: Text-to-code generation with modality-relative pre-training.
   links:
     - label: Code
@@ -141,6 +150,7 @@
 
 - title: HumanRankEval
   venue: NAACL 2024
+  tags: [evaluation, conversational assistants]
   description: Automatic evaluation of LMs as conversational assistants.
   links:
     - label: Code
