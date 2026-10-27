@@ -3,7 +3,7 @@ cv:
   label: Chief Scientific Officer, C Proof
   email: gerasimos.lampouras@gmail.com
   location: London, UK
-  summary: Gerasimos (Makis) Lampouras is the Chief Scientific Officer at C Proof, London. Prior to this, he was a Principal Research Scientist and served as the Team Leader of the Speech and Language group in Huawei Noah’s Ark Lab, London. <br><br> Areas of interest generally fall somewhere between Natural Language Processing and Machine Learning, with his latest efforts focusing on the information seeking and synthesis capabilities of LLM-based Agents and on neuro-symbolic approaches for math and code reasoning. Briefly, his previous work has focused on LLM-based code synthesis and understanding, Natural Language Generation, Dialogue Systems, and overall Machine Learning applications for Natural Language Processing. <br><br> Formerly, he was a Research Associate at the University of Cambridge, University of Sheffield and University College London. He graduated and received his MSc and PhD from the Athens University of Economics and Business.
+  summary: Gerasimos (Makis) Lampouras is the Chief Scientific Officer at C Proof, London. Prior to this, he was a Principal Research Scientist and served as the Team Leader of the NLP (Natural Language Processing) group in Huawei Noah’s Ark Lab, London. <br><br> Areas of interest generally fall somewhere between Natural Language Processing and Machine Learning, with his latest efforts focusing on the information seeking and synthesis capabilities of LLM-based Agents and on neuro-symbolic approaches for math and code reasoning. Briefly, his previous work has focused on LLM-based code synthesis and understanding, Natural Language Generation, Dialogue Systems, and overall Machine Learning applications for Natural Language Processing. <br><br> Formerly, he was a Research Associate at the University of Cambridge, University of Sheffield and University College London. He graduated and received his MSc and PhD from the Athens University of Economics and Business.
 
   sections:
     General Information:
@@ -14,14 +14,14 @@ cv:
 
     Experience:
       - position: Chief Scientific Officer
-        company: C Proof
+        company: <a href=https://cproof.ai/>C Proof</a>
         location: London, UK
         start_date: 2026
         highlights:
-          - Leading research on automatic verification for code agents, building the runtime (Chelis; <a href="https://chelis.ch/">https://chelis.ch/</a>) that ensures AI-generated code is correct and safe prior to execution. Spearheading technical strategy and domain applications, starting with quantitative finance (C Note; <a href="https://cproof.ai/c-note">https://cproof.ai/c-note</a>).
+          - Leading research on automatic verification for code agents, building the runtime (<a href="https://chelis.ch/">Chelis</a>) that ensures AI-generated code is correct and safe prior to execution. Spearheading technical strategy and domain applications, starting with quantitative finance (<a href="https://cproof.ai/c-note">C Note</a>).
 
       - position: Team Leader of the London NLP Team
-        company: Huawei Technologies Research & Development (UK) Ltd, London.
+        company: Huawei Technologies Research & Development (UK) Ltd
         location: London, UK
         start_date: 2024
         end_date: 2026
@@ -29,7 +29,7 @@ cv:
           - Leading a group of ~10 Senior Research Scientists and Engineers researching how to address current NLP and Large Language Models challenges, e.g. how to improve LLM's reasoning capabilities, LLM self-learning, LLM efficiency, LLMs for Programming Languages and Math, as well as related tasks.
 
       - position: Principal Research Scientist in NLP
-        company: Huawei Technologies Research & Development (UK) Ltd, London.
+        company: Huawei Technologies Research & Development (UK) Ltd
         location: London, UK
         start_date: 2023
         end_date: 2026
@@ -37,7 +37,7 @@ cv:
           - Research management and development of Code Language Models.
 
       - position: Senior Research Scientist in NLP
-        company: Huawei Technologies Research & Development (UK) Ltd, London.
+        company: Huawei Technologies Research & Development (UK) Ltd
         location: London, UK
         start_date: 2019
         end_date: 2023
@@ -45,7 +45,7 @@ cv:
           - Research and development focused on multilignual Natural Language Generation, evaluation, and Dialogue Systems.
 
       - position: Research Associate
-        company: University of Cambridge.
+        company: University of Cambridge
         location: Cambridge, UK
         start_date: 2018
         end_date: 2019
@@ -53,7 +53,7 @@ cv:
           - "EPSRC eNeMILP project: Research on non-monotonic incremental prediction of structured outputs."
 
       - position: Research Associate
-        company: University of Sheffield.
+        company: University of Sheffield
         location: Sheffield, UK
         start_date: 2015
         end_date: 2018
@@ -62,23 +62,21 @@ cv:
           - "EPSRC eNeMILP project: Research on non-monotonic incremental prediction of structured outputs."
 
       - position: Research Associate
-        company: University College London.
+        company: University College London
         location: London, UK
-        start_date: 2015
-        end_date: 2015
+        date: 2015
         highlights:
           - "EPSRC DILiGENt project: Research on domain-independent Natural Language Generation through imitating generation policies from unaligned corpora."
 
       - position: Research Assistant
-        company: Athens University of Economics and Business.
+        company: Athens University of Economics and Business
         location: Athens, Greece
-        start_date: 2014
-        end_date: 2014
+        date: 2014
         highlights:
-          - "BioASQ: A Challenge on Large-Scale Biomedical Semantic Indexing and Question Answering"
+          - "BioASQ: A Challenge on Large-Scale Biomedical Semantic Indexing and Question Answering."
 
       - position: Research Assistant
-        company: Athens University of Economics and Business.
+        company: Athens University of Economics and Business
         location: Athens, Greece
         start_date: 2011
         end_date: 2012
@@ -86,72 +84,122 @@ cv:
           - Researching a Linear Programming approach to multi-document text Summarization and Natural Language Generation from ontologies.
 
       - position: Research Assistant
-        company: Athens University of Economics and Business.
+        company: Athens University of Economics and Business
         location: Athens, Greece
         start_date: 2007
         end_date: 2009
         highlights:
-          - "INDIGO: Interaction with Personality and Dialogue Enabled Robots"
+          - "INDIGO: Interaction with Personality and Dialogue Enabled Robots."
 
     Education:
       - studyType: Ph.D. in Artificial Intelligence
-        institution: Athens University of Economics and Business.
+        institution: Athens University of Economics and Business
         location: Athens, Greece
         start_date: 2009
         end_date: 2015
         highlights:
-          - "Dissertation title: Natural Language Interaction with Semantic Web Ontologies."
-          - "Covering: (i) a robust framework supporting multilingual Natural Language Interaction with Semantic Web Ontologies; (ii) global optimization of content selection and lexicalization for output compression; (iii) automatic extraction and inference of Natural Language resources for Natural Language Generation."
+          - "Dissertation: Natural Language Interaction with Semantic Web Ontologies."
+          - A robust framework supporting multilingual Natural Language Interaction with Semantic Web Ontologies.
+          - Global optimization of content selection and lexicalization for output compression.
+          - Automatic extraction and inference of Natural Language resources for Natural Language Generation.
 
       - studyType: M.Sc. in Computer Science
-        institution: Athens University of Economics and Business.
+        institution: Athens University of Economics and Business
         location: Athens, Greece
         start_date: 2006
         end_date: 2008
         highlights:
-          - "Dissertation title: Methods to automatically detect definitions in document collections."
+          - "Dissertation: Methods to automatically detect definitions in document collections."
 
       - studyType: Bachelor’s degree in Informatics
-        institution: Athens University of Economics and Business.
+        institution: Athens University of Economics and Business
         location: Athens, Greece
         start_date: 2002
         end_date: 2006
         highlights:
-          - "Dissertation title: Revision and larger-scale experimental evaluation of a method to handle definition questions in Question Answering systems."
+          - "Dissertation: Revision and larger-scale experimental evaluation of a method to handle definition questions in Question Answering systems."
 
+    # Every dated section below uses the same shape as Experience (rendered with the same layout,
+    # see _includes/cv/render.liquid): position = bold title, company = subtitle,
+    # start_date/end_date for ranges (no end_date = "Present") or date for a single year,
+    # highlights = bullets (full sentences, ending with a period).
     Granted patents:
-      - bullet: "**2024**: Philip John Gorinski, Matthieu Zimmer, Gerasimos Lampouras, Derrick Goh Xin Deik, Ignacio Iacobacci, inventors; Huawei Technologies Co., Ltd., assignee. Apparatus and method for the training of a code synthesis model. World Intellectual Property Organization (WIPO) patent WO-2024213252-A1. 2024 Oct 17."
-      - bullet: "**2023**: Giulio Zhou, Gerasimos Lampouras, inventors; Huawei Technologies Co., Ltd., assignee. Hierarchical language generation with recurrent aggregation. World Intellectual Property Organization (WIPO) patent WO-2023030637-A1. 2023 Mar 9."
-      - bullet: "**2021**: Giulio Zhou, Gerasimos Lampouras, inventors; Huawei Technologies Co., Ltd., assignee. Device and method for generating language. World Intellectual Property Organization (WIPO) patent WO-2021204370-A1. 2021 Oct 14."
+      - position: Apparatus and method for the training of a code synthesis model
+        company: WIPO patent WO-2024213252-A1 · Huawei Technologies Co., Ltd. (assignee)
+        date: 2024-10-17
+        highlights:
+          - "Inventors: Philip John Gorinski, Matthieu Zimmer, Gerasimos Lampouras, Derrick Goh Xin Deik, Ignacio Iacobacci."
+      - position: Hierarchical language generation with recurrent aggregation
+        company: WIPO patent WO-2023030637-A1 · Huawei Technologies Co., Ltd. (assignee)
+        date: 2023-03-09
+        highlights:
+          - "Inventors: Giulio Zhou, Gerasimos Lampouras."
+      - position: Device and method for generating language
+        company: WIPO patent WO-2021204370-A1 · Huawei Technologies Co., Ltd. (assignee)
+        date: 2021-10-14
+        highlights:
+          - "Inventors: Giulio Zhou, Gerasimos Lampouras."
 
     Workshop and Shared Task organization:
-      - bullet: "**2024**: Co-organizer of SCI-CHAT: Workshop on Simulation of Conversational Intelligence in Chat."
-      - bullet: "**2022**: Co-organizer of the 6th Structured Prediction in Natural Language Processing workshop."
-      - bullet: "**2020**: Co-organizer of the 4th. Structured Prediction in Natural Language Processing workshop."
-      - bullet: "**2019**: Co-organizer of the 3rd Structured Prediction in Natural Language Processing workshop."
+      - position: Co-organizer
+        company: "SCI-CHAT: Workshop on Simulation of Conversational Intelligence in Chat"
+        date: 2024
+      - position: Co-organizer
+        company: 6th Workshop on Structured Prediction for NLP
+        date: 2022
+      - position: Co-organizer
+        company: 4th Workshop on Structured Prediction for NLP
+        date: 2020
+      - position: Co-organizer
+        company: 3rd Workshop on Structured Prediction for NLP
+        date: 2019
 
     Chairing and service:
-      - bullet: "**2023 - today**: Acting as ACL ARR Area Chair."
-      - bullet: "**2024**: Acted as “Summarization” Area Chair for EACL 2024."
-      - bullet: "**2024**: Acted as “Evaluation and Validation Methodologies” Area Chair at LREC-COLING 2024."
-      - bullet: "**2023**: Acted as “Generation & Summarization” Area Chair for EACL 2023."
-      - bullet: "**2021**: Acted as “Resources and Evaluation” Area Chair for EMNLP 2021."
-      - bullet: "**2020**: Acted as Sponsorship Chair for INLG 2020."
+      - position: Area Chair
+        company: ACL Rolling Review (ARR)
+        start_date: 2023
+      - position: Area Chair, “Summarization”
+        company: EACL 2024
+        date: 2024
+      - position: Area Chair, “Evaluation and Validation Methodologies”
+        company: LREC-COLING 2024
+        date: 2024
+      - position: Area Chair, “Generation & Summarization”
+        company: EACL 2023
+        date: 2023
+      - position: Area Chair, “Resources and Evaluation”
+        company: EMNLP 2021
+        date: 2021
+      - position: Sponsorship Chair
+        company: INLG 2020
+        date: 2020
 
     Honors and Awards:
-      - title: Huawei Team Gold Medal Award
-        date: "2025"
-      - title: Huawei Innovation Pioneer Award
-        date: "2022"
-        summary: "For work on PanGu-Coder: Program synthesis with function-level language modeling"
-      - title: Huawei Rising Star Awards
-        date: "2020, 2023, 2025"
-      - title: "Research Funding Program: Heracleitus II"
-        date: "2010–2013"
-        summary: Ph.D research fund co-financed by the European Union (European Social Fund – ESF) and Greek national funds through the Operational Program "Education and Lifelong Learning" of the National Strategic Reference Framework (NSRF).
-      - title: MSc scholarships
-        date: "2006–2007"
-        summary: Scholarships awarded in the first and second semester (3rd and 1st best position correspondingly) of the MSc program.
+      - position: Huawei Team Gold Medal Award
+        company: Huawei
+        date: 2025
+      - position: Huawei Rising Star Award
+        company: Huawei
+        date: 2025
+        highlights:
+          - Awarded in 2020, 2023 and 2025.
+      - position: Huawei Innovation Pioneer Award
+        company: Huawei
+        date: 2022
+        highlights:
+          - "For work on PanGu-Coder: Program synthesis with function-level language modeling."
+      - position: "Research Funding Program: Heracleitus II"
+        company: European Union (ESF) and Greek national funds
+        start_date: 2010
+        end_date: 2013
+        highlights:
+          - Ph.D. research fund co-financed by the European Union (European Social Fund – ESF) and Greek national funds through the Operational Program "Education and Lifelong Learning" of the National Strategic Reference Framework (NSRF).
+      - position: M.Sc. scholarships
+        company: Athens University of Economics and Business
+        start_date: 2006
+        end_date: 2007
+        highlights:
+          - Awarded in the first and second semester of the M.Sc. program (3rd and 1st best position, respectively).
 
     Other Interests:
       - label: <u>Hobbies</u>
