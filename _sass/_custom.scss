@@ -43,7 +43,7 @@ html[data-theme="dark"] {
 }
 
 // outline buttons tinted by where they point; used on the open source and publications pages
-$gl-link-buttons: ".oss-links .btn", ".publications ol.bibliography li .links a.btn:not(.abstract):not(.bibtex):not(.award)";
+$gl-link-buttons: ".oss-links .btn", ".publications ol.bibliography li .links a.btn";
 
 @mixin gl-link-buttons {
   --gl-link: var(--global-theme-color);
@@ -136,8 +136,18 @@ $gl-link-buttons: ".oss-links .btn", ".publications ol.bibliography li .links a.
     padding-bottom: 0.2rem;
   }
 
-  ol.bibliography li .links a.btn:not(.abstract):not(.bibtex):not(.award) {
+  // every button gets the rounded outline; links are tinted by destination (see above),
+  // the Abs/Bib toggles stay neutral and award badges keep the theme's highlight colour
+  ol.bibliography li .links a.btn {
     @include gl-link-buttons;
+
+    &.abstract,
+    &.bibtex {
+      --gl-link: var(--global-text-color);
+    }
+    &.award {
+      --gl-link: var(--global-highlight-color);
+    }
   }
 }
 
@@ -162,14 +172,22 @@ $gl-link-buttons: ".oss-links .btn", ".publications ol.bibliography li .links a.
   }
 
   // centre the date badge (and location) in its column; the theme pins the column to 75px and
-  // shifts it 15px left to offset the list indent removed above
+  // shifts it 15px left to offset the list indent removed above. The badge (~100px) is wider than
+  // the padded column, so drop the side padding and centre with flexbox, which overflows evenly.
   .date-column {
     width: auto;
     transform: none;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .table-cv {
-      margin: 0 auto;
+    // phones: the date stacks above the entry, so keep it aligned with the text
+    @media (max-width: 575.98px) {
+      align-items: flex-start;
+      padding-left: 15px;
     }
     td,
     .location {
