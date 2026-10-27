@@ -20,7 +20,7 @@ nav_order: 2
   }
   .oss-subgrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -68,7 +68,7 @@ nav_order: 2
               <div class="oss-sub">
                 <h4>{{ sub.title }}</h4>
                 {% if sub.venue %}<span class="badge">{{ sub.venue }}</span>{% endif %}
-                <p class="card-text">{{ sub.description }}</p>
+                {% if sub.description %}<p class="card-text">{{ sub.description }}</p>{% endif %}
                 <div class="oss-links">
                   {% for link in sub.links %}
                     <a class="btn btn-sm" href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="{{ link.icon }}"></i> {{ link.label }}</a>

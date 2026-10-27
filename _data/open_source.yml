@@ -102,27 +102,30 @@
     - label: Dataset
       url: https://huggingface.co/datasets/huawei-noah/python_text2code
       icon: fa-solid fa-database
-    - label: PanGu-Coder 300M
-      url: https://huggingface.co/huawei-noah/pangu-CodeCLM-300m
-      icon: fa-solid fa-cube
-    - label: PanGu-Coder 300M (full)
-      url: https://huggingface.co/huawei-noah/pangu-CodeCLM-full-300m
-      icon: fa-solid fa-cube
-    - label: PanGu-Coder 300M (partial)
-      url: https://huggingface.co/huawei-noah/pangu-CodeCLM-partial-300m
-      icon: fa-solid fa-cube
-    - label: PyCodeGPT 100M
-      url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-100m
-      icon: fa-solid fa-cube
-    - label: PyCodeGPT 100M (full)
-      url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-full-100m
-      icon: fa-solid fa-cube
-    - label: PyCodeGPT 100M (partial)
-      url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-partial-100m
-      icon: fa-solid fa-cube
   papers:
     - label: Paper
       arxiv: 2402.05783
+  subprojects:
+    - title: Models
+      links:
+        - label: PanGu-Coder 300M
+          url: https://huggingface.co/huawei-noah/pangu-CodeCLM-300m
+          icon: fa-solid fa-cube
+        - label: PanGu-Coder 300M (full)
+          url: https://huggingface.co/huawei-noah/pangu-CodeCLM-full-300m
+          icon: fa-solid fa-cube
+        - label: PanGu-Coder 300M (partial)
+          url: https://huggingface.co/huawei-noah/pangu-CodeCLM-partial-300m
+          icon: fa-solid fa-cube
+        - label: PyCodeGPT 100M
+          url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-100m
+          icon: fa-solid fa-cube
+        - label: PyCodeGPT 100M (full)
+          url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-full-100m
+          icon: fa-solid fa-cube
+        - label: PyCodeGPT 100M (partial)
+          url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-partial-100m
+          icon: fa-solid fa-cube
 
 - title: HumanRankEval
   venue: NAACL 2024
