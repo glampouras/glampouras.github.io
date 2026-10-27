@@ -43,6 +43,19 @@ nav_order: 2
     font-size: 0.95rem;
     padding: 0.3rem 0.75rem;
   }
+  .oss-links-cols {
+    display: grid;
+    grid-template-columns: repeat(var(--oss-cols), minmax(0, 1fr));
+  }
+  .oss-links-cols .btn {
+    text-align: center;
+    white-space: normal;
+  }
+  @media (max-width: 576px) {
+    .oss-links-cols {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 <div class="oss-list">
@@ -69,7 +82,7 @@ nav_order: 2
                 <h4>{{ sub.title }}</h4>
                 {% if sub.venue %}<span class="badge">{{ sub.venue }}</span>{% endif %}
                 {% if sub.description %}<p class="card-text">{{ sub.description }}</p>{% endif %}
-                <div class="oss-links">
+                <div class="oss-links{% if sub.columns %} oss-links-cols{% endif %}"{% if sub.columns %} style="--oss-cols: {{ sub.columns }}"{% endif %}>
                   {% for link in sub.links %}
                     <a class="btn btn-sm" href="{{ link.url }}" target="_blank" rel="noopener noreferrer"><i class="{{ link.icon }}"></i> {{ link.label }}</a>
                   {% endfor %}

@@ -1,6 +1,7 @@
 # Projects listed on the "open source code" page (_pages/open-source.md), newest first.
 # Each project: title, venue, description, links (label/url/icon) and papers (label/arxiv).
-# A project may also have subprojects (same fields), shown as subcards.
+# A project may also have subprojects (same fields), shown as subcards. A subproject's optional
+# `columns: N` lays its links out in an aligned N-column grid (single column on phones).
 # Icons: fa-solid fa-globe (website), fa-brands fa-github (code), fa-solid fa-database (dataset),
 #        fa-solid fa-trophy (leaderboard), fa-solid fa-toolbox (tool), fa-solid fa-cube (model)
 
@@ -107,24 +108,25 @@
       arxiv: 2402.05783
   subprojects:
     - title: Models
+      columns: 3 # lay links out in an aligned grid: one row per model family, base / partial / full
       links:
         - label: PanGu-Coder 300M
           url: https://huggingface.co/huawei-noah/pangu-CodeCLM-300m
           icon: fa-solid fa-cube
-        - label: PanGu-Coder 300M (full)
-          url: https://huggingface.co/huawei-noah/pangu-CodeCLM-full-300m
-          icon: fa-solid fa-cube
         - label: PanGu-Coder 300M (partial)
           url: https://huggingface.co/huawei-noah/pangu-CodeCLM-partial-300m
+          icon: fa-solid fa-cube
+        - label: PanGu-Coder 300M (full)
+          url: https://huggingface.co/huawei-noah/pangu-CodeCLM-full-300m
           icon: fa-solid fa-cube
         - label: PyCodeGPT 100M
           url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-100m
           icon: fa-solid fa-cube
-        - label: PyCodeGPT 100M (full)
-          url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-full-100m
-          icon: fa-solid fa-cube
         - label: PyCodeGPT 100M (partial)
           url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-partial-100m
+          icon: fa-solid fa-cube
+        - label: PyCodeGPT 100M (full)
+          url: https://huggingface.co/huawei-noah/pycodegpt-CodeCLM-full-100m
           icon: fa-solid fa-cube
 
 - title: HumanRankEval
