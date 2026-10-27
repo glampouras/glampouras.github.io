@@ -2,7 +2,7 @@
 # Each project: title, venue, description, links (label/url/icon) and papers (label/arxiv).
 # A project may also have subprojects (same fields), shown as subcards.
 # Icons: fa-solid fa-globe (website), fa-brands fa-github (code), fa-solid fa-database (dataset),
-#        fa-solid fa-trophy (leaderboard), fa-solid fa-toolbox (tool)
+#        fa-solid fa-trophy (leaderboard), fa-solid fa-toolbox (tool), fa-solid fa-cube (model)
 
 - title: DeepSynth
   venue: ICLR 2026
@@ -38,18 +38,28 @@
     - title: DRIFT
       venue: ICLR 2026
       description: Decompose, Retrieve, Illustrate, then Formalize Theorems, retrieving premises for sub-components of informal statements.
+      # code (github.com/Formal-Math-Reasoning/DRIFT) not public yet; add a Code link once released
+      links:
+        - label: Model
+          url: https://huggingface.co/Formal-Math-Reasoning/DRIFT-dpr-mathlib
+          icon: fa-solid fa-cube
       papers:
         - label: Paper
           arxiv: 2510.10815
     - title: TopoAlign
       venue: EMNLP 2026
       description: Aligning code to math via topological decomposition, unlocking code repositories as training data for Math LLMs.
+      links:
+        - label: Dataset
+          url: https://huggingface.co/datasets/Formal-Math-Reasoning/TopoAlign_Python
+          icon: fa-solid fa-database
       papers:
         - label: Paper
           arxiv: 2510.11944
     - title: Conjecturing
       venue: arXiv 2025
       description: ConjectureBench and Lean-FIRe, treating conjecturing as a distinct step of formal mathematical reasoning.
+      # code (github.com/huawei-noah/ConjectureBench) not public yet; add a Code link once released
       papers:
         - label: Paper
           arxiv: 2510.11986
