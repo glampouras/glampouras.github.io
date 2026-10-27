@@ -160,6 +160,25 @@ $gl-link-buttons: ".oss-links .btn", ".publications ol.bibliography li .links a.
   .list-group .items {
     list-style: disc;
   }
+
+  // centre the date badge (and location) in its column; the theme pins the column to 75px and
+  // shifts it 15px left to offset the list indent removed above
+  .date-column {
+    width: auto;
+    transform: none;
+    text-align: center;
+
+    .table-cv {
+      margin: 0 auto;
+    }
+    td,
+    .location {
+      text-align: center;
+    }
+    td {
+      border: 0;
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------
