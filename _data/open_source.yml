@@ -6,6 +6,7 @@
 # `logo: <file>` shows an image from assets/logos/ beside the title (square; corners are rounded by the page).
 # (Kept outside assets/img/ so the responsive-image plugin doesn't generate oversized WebP copies.)
 # Link buttons are tinted automatically by destination (GitHub, Hugging Face, arXiv, other).
+# Keep links in this order on every card: Code, Website, Dataset, Model(s), Leaderboard; papers always render last.
 # Icons: fa-solid fa-globe (website), fa-brands fa-github (code), fa-solid fa-database (dataset),
 #        fa-solid fa-trophy (leaderboard), fa-solid fa-toolbox (tool), fa-solid fa-cube (model)
 
@@ -15,12 +16,12 @@
   tags: [formal verification, programming languages, AI agents]
   description: The verified tensor language for agent-written code.
   links:
-    - label: Website
-      url: https://chelis.ch/
-      icon: fa-solid fa-globe
     - label: Code
       url: https://github.com/Chelis-Lang/chelis
       icon: fa-brands fa-github
+    - label: Website
+      url: https://chelis.ch/
+      icon: fa-solid fa-globe
 
 - title: DeepSynth
   logo: deepsynth.png # from the DeepSynth project site
@@ -28,12 +29,12 @@
   tags: [AI agents, benchmark, information synthesis]
   description: A benchmark of 120 real-world tasks testing whether AI agents can gather, combine, and reason over information from multiple sources.
   links:
-    - label: Website
-      url: https://agentdeepsynthesis.github.io/deepsynth.github.io/
-      icon: fa-solid fa-globe
     - label: Code
       url: https://github.com/agentdeepsynthesis/deepsynth-bench
       icon: fa-brands fa-github
+    - label: Website
+      url: https://agentdeepsynthesis.github.io/deepsynth.github.io/
+      icon: fa-solid fa-globe
     - label: Dataset
       url: https://huggingface.co/datasets/DeepSynthesisTeam/deepsynth-bench
       icon: fa-solid fa-database
@@ -49,12 +50,12 @@
   tags: [autoformalisation, theorem proving, Lean 4]
   description: Bridging natural language mathematics and machine-verifiable proofs through autoformalisation.
   links:
-    - label: Website
-      url: https://formal-math-reasoning.github.io/
-      icon: fa-solid fa-globe
     - label: GitHub
       url: https://github.com/Formal-Math-Reasoning
       icon: fa-brands fa-github
+    - label: Website
+      url: https://formal-math-reasoning.github.io/
+      icon: fa-solid fa-globe
   # subprojects render as subcards inside this card
   subprojects:
     - title: DRIFT
