@@ -1,199 +1,158 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Gerasimos (Makis) Lampouras
-    - name: Date of Birth
-      value: 15th June 1984
-    - name: Languages
-      value: English, Greek
+cv:
+  name: Gerasimos (Makis) Lampouras
+  label: Chief Scientific Officer, C Proof
+  email: gerasimos.lampouras@gmail.com
+  location: London, UK
+  summary: Gerasimos (Makis) Lampouras is the Chief Scientific Officer at C Proof, London. Prior to this, he was a Principal Research Scientist and served as the Team Leader of the Speech and Language group in Huawei Noah’s Ark Lab, London. <br><br> Areas of interest generally fall somewhere between Natural Language Processing and Machine Learning, with his latest efforts focusing on the information seeking and synthesis capabilities of LLM-based Agents and on neuro-symbolic approaches for math and code reasoning. Briefly, his previous work has focused on LLM-based code synthesis and understanding, Natural Language Generation, Dialogue Systems, and overall Machine Learning applications for Natural Language Processing. <br><br> Formerly, he was a Research Associate at the University of Cambridge, University of Sheffield and University College London. He graduated and received his MSc and PhD from the Athens University of Economics and Business.
 
+  sections:
+    General Information:
+      - label: Date of Birth
+        details: 15th June 1984
+      - label: Languages
+        details: English, Greek
 
-- title: Short bio
-  type: text
-  contents: Gerasimos (Makis) Lampouras is the Chief Scientific Officer at C Proof, London. Prior to this, he was a Principal Research Scientist and served as the Team Leader of the Speech and Language group in Huawei Noah’s Ark Lab, London. <br><br> Areas of interest generally fall somewhere between Natural Language Processing and Machine Learning, with his latest efforts focusing on the information seeking and synthesis capabilities of LLM-based Agents and on neuro-symbolic approaches for math and code reasoning. Briefly, his previous work has focused on LLM-based code synthesis and understanding, Natural Language Generation, Dialogue Systems, and overall Machine Learning applications for Natural Language Processing. <br><br> Formerly, he was a Research Associate at the University of Cambridge, University of Sheffield and University College London. He graduated and received his MSc and PhD from the Athens University of Economics and Business.
+    Experience:
+      - position: Chief Scientific Officer
+        company: C Proof
+        location: London, UK
+        start_date: 2026
+        highlights:
+          - Leading research on automatic verification for code agents, building the runtime (Chelis; <a href="https://chelis.ch/">https://chelis.ch/</a>) that ensures AI-generated code is correct and safe prior to execution. Spearheading technical strategy and domain applications, starting with quantitative finance (C Note; <a href="https://cproof.ai/c-note">https://cproof.ai/c-note</a>).
 
-  
-- title: Experience
-  type: time_table
-  contents:
-    - title: Chief Scientific Officer
-      location: London, UK
-      institution: C Proof
-      year: 2026 - today
-      description:
-        - Leading research on automatic verification for code agents, building the runtime that ensures AI-generated code is correct and safe prior to execution. Spearheading technical strategy and domain applications, starting with quantitative finance.
+      - position: Team Leader of the London NLP Team
+        company: Huawei Technologies Research & Development (UK) Ltd, London.
+        location: London, UK
+        start_date: 2024
+        end_date: 2026
+        highlights:
+          - Leading a group of ~10 Senior Research Scientists and Engineers researching how to address current NLP and Large Language Models challenges, e.g. how to improve LLM's reasoning capabilities, LLM self-learning, LLM efficiency, LLMs for Programming Languages and Math, as well as related tasks.
 
-    - title: Team Leader of the London NLP Team
-      location: London, UK
-      institution: Huawei Technologies Research & Development (UK) Ltd, London.
-      year: 2024 - 2026
-      description:
-        - Leading a group of ~10 Senior Research Scientists and Engineers researching how to address current NLP and Large Language Models challenges, e.g. how to improve LLM's reasoning capabilities, LLM self-learning, LLM efficiency, LLMs for Programming Languages and Math, as well as related tasks.
-    - title: Principal Research Scientist in NLP
-      location: London, UK
-      institution: Huawei Technologies Research & Development (UK) Ltd, London.
-      year: 2023 - 2026
-      description:
-        - Research management and development of Code Language Models.
+      - position: Principal Research Scientist in NLP
+        company: Huawei Technologies Research & Development (UK) Ltd, London.
+        location: London, UK
+        start_date: 2023
+        end_date: 2026
+        highlights:
+          - Research management and development of Code Language Models.
 
-    - title: Senior Research Scientist in NLP
-      location: London, UK
-      institution: Huawei Technologies Research & Development (UK) Ltd, London.
-      year: 2019 - 2023
-      description:
-        - Research and development focused on multilignual Natural Language Generation, evaluation, and Dialogue Systems.
+      - position: Senior Research Scientist in NLP
+        company: Huawei Technologies Research & Development (UK) Ltd, London.
+        location: London, UK
+        start_date: 2019
+        end_date: 2023
+        highlights:
+          - Research and development focused on multilignual Natural Language Generation, evaluation, and Dialogue Systems.
 
-    - title: Research Associate
-      location: Cambridge, UK
-      institution: University of Cambridge.
-      year: 2018 - 2019
-      description:
-        - "EPSRC eNeMILP project: Research on non-monotonic incremental prediction of structured outputs."
+      - position: Research Associate
+        company: University of Cambridge.
+        location: Cambridge, UK
+        start_date: 2018
+        end_date: 2019
+        highlights:
+          - "EPSRC eNeMILP project: Research on non-monotonic incremental prediction of structured outputs."
 
-    - title: Research Associate
-      location: Sheffield, UK
-      institution: University of Sheffield.
-      year: 2015 - 2018
-      description:
-        - "EPSRC DILiGENt project: Research on domain-independent Natural Language Generation through imitating generation policies from unaligned corpora."
-        - "EPSRC eNeMILP project: Research on non-monotonic incremental prediction of structured outputs."
+      - position: Research Associate
+        company: University of Sheffield.
+        location: Sheffield, UK
+        start_date: 2015
+        end_date: 2018
+        highlights:
+          - "EPSRC DILiGENt project: Research on domain-independent Natural Language Generation through imitating generation policies from unaligned corpora."
+          - "EPSRC eNeMILP project: Research on non-monotonic incremental prediction of structured outputs."
 
-    - title: Research Associate
-      location: London, UK
-      institution: University College London.
-      year: 2015 - 2015
-      description:
-        - "EPSRC DILiGENt project: Research on domain-independent Natural Language Generation through imitating generation policies from unaligned corpora."
+      - position: Research Associate
+        company: University College London.
+        location: London, UK
+        start_date: 2015
+        end_date: 2015
+        highlights:
+          - "EPSRC DILiGENt project: Research on domain-independent Natural Language Generation through imitating generation policies from unaligned corpora."
 
-    - title: Research Assistant
-      location: Athens, Greece
-      institution: Athens University of Economics and Business.
-      year: 2014
-      description:
-        - "BioASQ: A Challenge on Large-Scale Biomedical Semantic Indexing and Question Answering"
-        
-    - title: Research Assistant
-      location: Athens, Greece
-      institution: Athens University of Economics and Business.
-      year: 2011 - 2012
-      description:
-        - Researching a Linear Programming approach to multi-document text Summarization and Natural Language Generation from ontologies.
-        
-    - title: Research Assistant
-      location: Athens, Greece
-      institution: Athens University of Economics and Business.
-      year: 2007 - 2009
-      description:
-        - "INDIGO: Interaction with Personality and Dialogue Enabled Robots"
-      
-      
-- title: Education
-  type: time_table
-  contents:
-    - title: Ph.D. in Artificial Intelligence
-      institution: Athens University of Economics and Business.
-      location: Athens, Greece
-      year: 2009 - 2015
-      description:
-        - "Dissertation title: Natural Language Interaction with Semantic Web Ontologies."
-        - title: "Covering:"
-          contents:
-            - A robust framework supporting multilingual Natural Language Interaction with Semantic Web Ontologies.
-            - Global optimization of content selection and lexicalization for output compression.
-            - Automatic extraction and inference of Natural Language resources for Natural Language Generation.
-    - title: M.Sc. in Computer Science
-      institution: Athens University of Economics and Business.
-      location: Athens, Greece
-      year: 2006 - 2008
-      description:
-        - "Dissertation title: Methods to automatically detect definitions in document collections."
-    - title: Bachelor’s degree in Informatics
-      institution: Athens University of Economics and Business.
-      location: Athens, Greece
-      year: 2002 - 2006
-      description:
-        - "Dissertation title: Revision and larger-scale experimental evaluation of a method to handle definition questions in Question Answering systems."
+      - position: Research Assistant
+        company: Athens University of Economics and Business.
+        location: Athens, Greece
+        start_date: 2014
+        end_date: 2014
+        highlights:
+          - "BioASQ: A Challenge on Large-Scale Biomedical Semantic Indexing and Question Answering"
 
+      - position: Research Assistant
+        company: Athens University of Economics and Business.
+        location: Athens, Greece
+        start_date: 2011
+        end_date: 2012
+        highlights:
+          - Researching a Linear Programming approach to multi-document text Summarization and Natural Language Generation from ontologies.
 
-- title: Granted patents
-  type: time_table
-  contents:
-    - year: 2024
-      items:
-        "Philip John Gorinski, Matthieu Zimmer, Gerasimos Lampouras, Derrick Goh Xin Deik, Ignacio Iacobacci, inventors; Huawei Technologies Co., Ltd., assignee. Apparatus and method for the training of a code synthesis model. World Intellectual Property Organization (WIPO) patent WO-2024213252-A1. 2024 Oct 17."
-    - year: 2023
-      items:
-        "Giulio Zhou, Gerasimos Lampouras, inventors; Huawei Technologies Co., Ltd., assignee. Hierarchical language generation with recurrent aggregation. World Intellectual Property Organization (WIPO) patent WO-2023030637-A1. 2023 Mar 9."
-    - year: 2021
-      items:
-        "Giulio Zhou, Gerasimos Lampouras, inventors; Huawei Technologies Co., Ltd., assignee. Device and method for generating language. World Intellectual Property Organization (WIPO) patent WO-2021204370-A1. 2021 Oct 14."
+      - position: Research Assistant
+        company: Athens University of Economics and Business.
+        location: Athens, Greece
+        start_date: 2007
+        end_date: 2009
+        highlights:
+          - "INDIGO: Interaction with Personality and Dialogue Enabled Robots"
 
-- title: Workshop and Shared Task organization
-  type: time_table
-  contents:
-    - year: 2024
-      items:
-        - "Co-organizer of SCI-CHAT: Workshop on Simulation of Conversational Intelligence in Chat."
-    - year: 2022
-      items:
-        - Co-organizer of the 6th Structured Prediction in Natural Language Processing workshop.
-    - year: 2020
-      items:
-        - Co-organizer of the 4th. Structured Prediction in Natural Language Processing workshop.
-    - year: 2019
-      items:
-        - Co-organizer of the 3rd Structured Prediction in Natural Language Processing workshop.
-        
-- title: Chairing and service
-  type: time_table
-  contents:
-    - year: 2023 - today
-      items:
-         - Acting as ACL ARR Area Chair.
-    - year: 2024
-      items:
-        - Acted as “Summarization” Area Chair for EACL 2024.
-    - year: 2024
-      items:
-        - Acted as “Evaluation and Validation Methodologies” Area Chair at LREC-COLING 2024.
-    - year: 2023
-      items:
-        - Acted as “Generation & Summarization” Area Chair for EACL 2023.
-    - year: 2021
-      items:
-        - Acted as “Resources and Evaluation” Area Chair for EMNLP 2021.
-    - year: 2020
-      items:
-        - Acted as Sponsorship Chair for INLG 2020.
+    Education:
+      - studyType: Ph.D. in Artificial Intelligence
+        institution: Athens University of Economics and Business.
+        location: Athens, Greece
+        start_date: 2009
+        end_date: 2015
+        highlights:
+          - "Dissertation title: Natural Language Interaction with Semantic Web Ontologies."
+          - "Covering: (i) a robust framework supporting multilingual Natural Language Interaction with Semantic Web Ontologies; (ii) global optimization of content selection and lexicalization for output compression; (iii) automatic extraction and inference of Natural Language resources for Natural Language Generation."
 
-        
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 2025
-      items:
-        - Huawei Team Gold Medal Award
-    - year: 2022
-      items:
-        - Huawei Innovation Pioneer Award
-        - "For work on PanGu-Coder: Program synthesis with function-level language modeling"
-    - year: 2020, 2023, 2025
-      items:
-        - Huawei Rising Star Awards
-    - year: 2010-2013
-      items:
-        - "Research Funding Program: Heracleitus II"
-        - Ph.D research fund co-financed by the European Union (European Social Fund – ESF) and Greek national funds through the Operational Program "Education and Lifelong Learning" of the National Strategic Reference Framework (NSRF).
-    - year: 2006-2007
-      items:
-        - MSc scholarships
-        - Scholarships awarded in the first and second semester (3rd and 1st best position correspondingly) of the MSc program.
+      - studyType: M.Sc. in Computer Science
+        institution: Athens University of Economics and Business.
+        location: Athens, Greece
+        start_date: 2006
+        end_date: 2008
+        highlights:
+          - "Dissertation title: Methods to automatically detect definitions in document collections."
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u>
-        Reading/writing fiction, 
-        running TTRPGs, 
-        game design.
+      - studyType: Bachelor’s degree in Informatics
+        institution: Athens University of Economics and Business.
+        location: Athens, Greece
+        start_date: 2002
+        end_date: 2006
+        highlights:
+          - "Dissertation title: Revision and larger-scale experimental evaluation of a method to handle definition questions in Question Answering systems."
+
+    Granted patents:
+      - bullet: "**2024**: Philip John Gorinski, Matthieu Zimmer, Gerasimos Lampouras, Derrick Goh Xin Deik, Ignacio Iacobacci, inventors; Huawei Technologies Co., Ltd., assignee. Apparatus and method for the training of a code synthesis model. World Intellectual Property Organization (WIPO) patent WO-2024213252-A1. 2024 Oct 17."
+      - bullet: "**2023**: Giulio Zhou, Gerasimos Lampouras, inventors; Huawei Technologies Co., Ltd., assignee. Hierarchical language generation with recurrent aggregation. World Intellectual Property Organization (WIPO) patent WO-2023030637-A1. 2023 Mar 9."
+      - bullet: "**2021**: Giulio Zhou, Gerasimos Lampouras, inventors; Huawei Technologies Co., Ltd., assignee. Device and method for generating language. World Intellectual Property Organization (WIPO) patent WO-2021204370-A1. 2021 Oct 14."
+
+    Workshop and Shared Task organization:
+      - bullet: "**2024**: Co-organizer of SCI-CHAT: Workshop on Simulation of Conversational Intelligence in Chat."
+      - bullet: "**2022**: Co-organizer of the 6th Structured Prediction in Natural Language Processing workshop."
+      - bullet: "**2020**: Co-organizer of the 4th. Structured Prediction in Natural Language Processing workshop."
+      - bullet: "**2019**: Co-organizer of the 3rd Structured Prediction in Natural Language Processing workshop."
+
+    Chairing and service:
+      - bullet: "**2023 - today**: Acting as ACL ARR Area Chair."
+      - bullet: "**2024**: Acted as “Summarization” Area Chair for EACL 2024."
+      - bullet: "**2024**: Acted as “Evaluation and Validation Methodologies” Area Chair at LREC-COLING 2024."
+      - bullet: "**2023**: Acted as “Generation & Summarization” Area Chair for EACL 2023."
+      - bullet: "**2021**: Acted as “Resources and Evaluation” Area Chair for EMNLP 2021."
+      - bullet: "**2020**: Acted as Sponsorship Chair for INLG 2020."
+
+    Honors and Awards:
+      - title: Huawei Team Gold Medal Award
+        date: "2025"
+      - title: Huawei Innovation Pioneer Award
+        date: "2022"
+        summary: "For work on PanGu-Coder: Program synthesis with function-level language modeling"
+      - title: Huawei Rising Star Awards
+        date: "2020, 2023, 2025"
+      - title: "Research Funding Program: Heracleitus II"
+        date: "2010–2013"
+        summary: Ph.D research fund co-financed by the European Union (European Social Fund – ESF) and Greek national funds through the Operational Program "Education and Lifelong Learning" of the National Strategic Reference Framework (NSRF).
+      - title: MSc scholarships
+        date: "2006–2007"
+        summary: Scholarships awarded in the first and second semester (3rd and 1st best position correspondingly) of the MSc program.
+
+    Other Interests:
+      - label: <u>Hobbies</u>
+        details: Reading/writing fiction, running TTRPGs, game design.

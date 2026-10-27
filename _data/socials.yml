@@ -1,0 +1,9 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: gerasimos.lampouras@gmail.com # your email address
+scholar_userid: z2UqpsoAAAAJ # your Google Scholar ID
+semanticscholar_id: 2346538 # your Semantic Scholar ID
+linkedin_username: glampouras # your LinkedIn user name
+x_username: glampouras_NLP # your X handle
+# rss_icon: true # uncomment this line to show the RSS icon
