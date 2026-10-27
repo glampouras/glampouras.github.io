@@ -1,5 +1,6 @@
 # Projects listed on the "open source code" page (_pages/open-source.md), newest first.
 # Each project: title, venue, description, optional repo label, links (label/url/icon) and papers (label/arxiv).
+# A project may also have subprojects (same fields), shown as subcards.
 # Icons: fa-solid fa-globe (website), fa-brands fa-github (code), fa-solid fa-database (dataset),
 #        fa-solid fa-trophy (leaderboard), fa-solid fa-toolbox (tool)
 
@@ -24,7 +25,6 @@
       arxiv: 2602.21143
 
 - title: Formal Mathematical Reasoning
-  venue: ICLR 2026
   description: Bridging natural language mathematics and machine-verifiable proofs through autoformalisation.
   links:
     - label: Website
@@ -33,16 +33,32 @@
     - label: GitHub
       url: https://github.com/Formal-Math-Reasoning
       icon: fa-brands fa-github
-    - label: LeanFlow
-      url: https://github.com/Formal-Math-Reasoning/leanflow
-      icon: fa-solid fa-toolbox
-  papers:
-    - label: DRIFT
-      arxiv: 2510.10815
-    - label: Conjecturing
-      arxiv: 2510.11986
-    - label: TopoAlign
-      arxiv: 2510.11944
+  # subprojects render as subcards inside this card, which then spans the full grid width
+  subprojects:
+    - title: DRIFT
+      venue: ICLR 2026
+      description: Decompose, Retrieve, Illustrate, then Formalize Theorems, retrieving premises for sub-components of informal statements.
+      papers:
+        - label: Paper
+          arxiv: 2510.10815
+    - title: TopoAlign
+      venue: EMNLP 2026
+      description: Aligning code to math via topological decomposition, unlocking code repositories as training data for Math LLMs.
+      papers:
+        - label: Paper
+          arxiv: 2510.11944
+    - title: Conjecturing
+      venue: arXiv 2025
+      description: ConjectureBench and Lean-FIRe, treating conjecturing as a distinct step of formal mathematical reasoning.
+      papers:
+        - label: Paper
+          arxiv: 2510.11986
+    - title: LeanFlow
+      description: A Python interface for Lean 4.
+      links:
+        - label: Code
+          url: https://github.com/Formal-Math-Reasoning/leanflow
+          icon: fa-brands fa-github
 
 - title: DReSD
   venue: ACL Findings 2025
