@@ -1,0 +1,254 @@
+// Site-specific styles, loaded last from assets/css/main.scss.
+// Everything keys off the theme's CSS variables, so light/dark mode keeps working.
+
+// ---------------------------------------------------------------------------
+// Brand palette: one teal hue in both modes (al-folio defaults to magenta in light mode)
+// ---------------------------------------------------------------------------
+:root {
+  --global-theme-color: #0e7490;
+  --global-hover-color: #0e7490;
+  --global-code-bg-color: rgba(14, 116, 144, 0.06);
+
+  // link tints by destination
+  --gl-github: #24292f;
+  --gl-hf: #a86500;
+  --gl-paper: #b31b1b;
+  --gl-shadow: rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #2698ba;
+  --global-hover-color: #2698ba;
+  --global-code-bg-color: rgba(38, 152, 186, 0.1);
+
+  --gl-github: #e6edf3;
+  --gl-hf: #ffcc4d;
+  --gl-paper: #ff7b72;
+  --gl-shadow: rgba(0, 0, 0, 0.45);
+}
+
+// ---------------------------------------------------------------------------
+// Shared pieces
+// ---------------------------------------------------------------------------
+
+// page titles: short accent underline
+.post-header .post-title::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3px;
+  margin-top: 0.4rem;
+  border-radius: 2px;
+  background: var(--global-theme-color);
+}
+
+// outline buttons tinted by where they point; used on the open source and publications pages
+$gl-link-buttons: ".oss-links .btn", ".publications ol.bibliography li .links a.btn:not(.abstract):not(.bibtex):not(.award)";
+
+@mixin gl-link-buttons {
+  --gl-link: var(--global-theme-color);
+  color: var(--gl-link);
+  border: 1px solid var(--gl-link);
+  border-radius: 0.375rem;
+
+  &:hover {
+    color: var(--global-card-bg-color);
+    background: var(--gl-link);
+    border-color: var(--gl-link);
+  }
+}
+
+// The deploy step's purgecss can't match attribute values against the HTML and would drop
+// these rules, so they are fenced off; the "!" keeps the comments through Sass compression.
+/*! purgecss start ignore */
+@each $sel in $gl-link-buttons {
+  #{$sel}[href*="github.com"] {
+    --gl-link: var(--gl-github);
+  }
+  #{$sel}[href*="huggingface.co"] {
+    --gl-link: var(--gl-hf);
+  }
+  #{$sel}[href*="arxiv.org"] {
+    --gl-link: var(--gl-paper);
+  }
+}
+/*! purgecss end ignore */
+
+// topic chips
+.gl-chips {
+  margin: 0.4rem 0 0.6rem;
+}
+.gl-chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 0.1rem 0.6rem;
+  margin: 0 0.3rem 0.3rem 0;
+  border-radius: 999px;
+  color: var(--global-theme-color);
+  background: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+}
+
+// accent-striped card with hover lift
+.gl-card {
+  border-left: 4px solid var(--global-theme-color);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px var(--gl-shadow);
+  }
+  .card-title {
+    color: var(--global-theme-color);
+    margin-bottom: 0.25rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// About page
+// ---------------------------------------------------------------------------
+.profile img {
+  border-radius: 0.75rem !important;
+  box-shadow: 0 8px 24px var(--gl-shadow) !important;
+}
+
+.social .contact-icons a {
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
+  display: inline-block;
+
+  &:hover {
+    color: var(--global-theme-color);
+    transform: translateY(-2px);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Publications (also the selected papers on the about page)
+// ---------------------------------------------------------------------------
+.publications {
+  h2.bibliography {
+    color: var(--global-theme-color);
+    border-bottom: 2px solid color-mix(in srgb, var(--global-theme-color) 30%, transparent);
+    padding-bottom: 0.2rem;
+  }
+
+  ol.bibliography li .links a.btn:not(.abstract):not(.bibtex):not(.award) {
+    @include gl-link-buttons;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// CV
+// ---------------------------------------------------------------------------
+.cv .card {
+  border-left: 4px solid var(--global-theme-color);
+
+  .card-title {
+    color: var(--global-theme-color);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Open source page (_pages/open-source.md)
+// ---------------------------------------------------------------------------
+.oss-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+// featured card: tinted background, heavier stripe, larger title
+.oss-featured {
+  border-left-width: 6px;
+  background: color-mix(in srgb, var(--global-theme-color) 7%, var(--global-card-bg-color));
+
+  .card-title {
+    font-size: 1.75rem;
+  }
+}
+.oss-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+  margin-bottom: 0.25rem;
+}
+
+// logo beside the title block
+.oss-head {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.oss-head-text {
+  flex: 1;
+  min-width: 0;
+}
+.oss-logo {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 22%;
+  object-fit: cover;
+}
+.oss-featured .oss-logo {
+  width: 84px;
+  height: 84px;
+}
+
+// subcards
+.oss-subgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.oss-sub {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+
+  h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+// link buttons
+.oss-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+
+  .btn {
+    @include gl-link-buttons;
+    margin: 0;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.75rem;
+  }
+}
+.oss-links-cols {
+  display: grid;
+  grid-template-columns: repeat(var(--oss-cols), minmax(0, 1fr));
+
+  .btn {
+    text-align: center;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 576px) {
+  .oss-logo,
+  .oss-featured .oss-logo {
+    width: 48px;
+    height: 48px;
+  }
+  .oss-links-cols {
+    grid-template-columns: 1fr;
+  }
+}
