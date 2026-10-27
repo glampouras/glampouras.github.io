@@ -68,7 +68,8 @@ $gl-link-buttons: ".oss-links .btn", ".publications ol.bibliography li .links a.
   #{$sel}[href*="huggingface.co"] {
     --gl-link: var(--gl-hf);
   }
-  #{$sel}[href*="arxiv.org"] {
+  #{$sel}[href*="arxiv.org"],
+  #{$sel}[href*="aclanthology.org"] {
     --gl-link: var(--gl-paper);
   }
 }
