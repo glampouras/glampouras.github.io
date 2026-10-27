@@ -25,7 +25,7 @@ latest_posts:
 
 Hello there! :smirk_cat:	
 
-I am the Chief Scientific Officer at [C Proof](https://cproof.ai/), helping build [verified runtimes for AI-generated code](https://chelis.ch/), using formal methods and provable correctness to ensure AI agents can produce safe, high-stakes code backed by rigorous proof. Prior to this, I was a Principal Research Scientist and served as the Team Leader of the Speech and Language group in Huawei [Noah’s](https://www.linkedin.com/company/noah-s-ark-lab/) [Ark](https://github.com/huawei-noah) [Lab](https://www.noahlab.com.hk/#/about), London. 
+I am the Chief Scientific Officer at [C Proof](https://cproof.ai/), helping build [verified runtimes for AI-generated code](https://chelis.ch/), using formal methods and provable correctness to ensure AI agents can produce safe, high-stakes code backed by rigorous proof. Prior to this, I was a Principal Research Scientist and served as the Team Leader of the NLP (Natural Language Processing) group in Huawei [Noah’s](https://www.linkedin.com/company/noah-s-ark-lab/) [Ark](https://github.com/huawei-noah) [Lab](https://www.noahlab.com.hk/#/about), London. 
 
 My areas of interest generally fall somewhere between Natural Language Processing and Machine Learning, with my latest efforts focused on improving the auto-regressive reasoning capabilities of Large Language Models. Recently this journey has led me to try and teach LLMs to generate / understand programming languages, while previously my work was more focused on natural language generation, dialogue systems, and machine learning applications for NLP.
 
