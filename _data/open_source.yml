@@ -1,5 +1,5 @@
 # Projects listed on the "open source code" page (_pages/open-source.md), newest first.
-# Each project: title, venue, description, optional repo label, links (label/url/icon) and papers (label/arxiv).
+# Each project: title, venue, description, links (label/url/icon) and papers (label/arxiv).
 # A project may also have subprojects (same fields), shown as subcards.
 # Icons: fa-solid fa-globe (website), fa-brands fa-github (code), fa-solid fa-database (dataset),
 #        fa-solid fa-trophy (leaderboard), fa-solid fa-toolbox (tool)
@@ -62,7 +62,6 @@
 
 - title: DReSD
   venue: ACL Findings 2025
-  repo: huawei-noah/HEBO
   description: Dense Retrieval for Speculative Decoding, using approximate nearest neighbour search over contextualised token embeddings.
   links:
     - label: Code
@@ -74,7 +73,6 @@
 
 - title: SparsePO
   venue: EMNLP Findings 2025
-  repo: huawei-noah/HEBO
   description: Controlling preference alignment of LLMs via sparse token-level masks over KL divergence and reward.
   links:
     - label: Code
@@ -86,7 +84,6 @@
 
 - title: Text-to-Code MRPT
   venue: EACL 2024
-  repo: huawei-noah/noah-research
   description: Text-to-code generation with modality-relative pre-training.
   links:
     - label: Code
@@ -98,7 +95,6 @@
 
 - title: HumanRankEval
   venue: NAACL 2024
-  repo: huawei-noah/noah-research
   description: Automatic evaluation of LMs as conversational assistants.
   links:
     - label: Code

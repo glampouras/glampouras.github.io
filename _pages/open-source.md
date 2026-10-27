@@ -33,11 +33,6 @@ nav_order: 2
     font-size: 1.05rem;
     margin-bottom: 0.25rem;
   }
-  .oss-repo {
-    font-size: 0.85rem;
-    opacity: 0.7;
-    margin-bottom: 0.5rem;
-  }
   .oss-links {
     display: flex;
     flex-wrap: wrap;
@@ -56,9 +51,6 @@ nav_order: 2
       <div class="card-body">
         <h3 class="card-title">{{ project.title }}</h3>
         {% if project.venue %}<span class="badge">{{ project.venue }}</span>{% endif %}
-        {% if project.repo %}
-          <div class="oss-repo"><i class="fa-brands fa-github"></i> {{ project.repo }}</div>
-        {% endif %}
         <p class="card-text">{{ project.description }}</p>
         <div class="oss-links">
           {% for link in project.links %}
