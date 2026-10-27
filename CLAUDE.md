@@ -2,6 +2,17 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## This repo is a personal site, not the al-folio starter
+
+This is Gerasimos (Makis) Lampouras's site (`glampouras.github.io`), built from the al-folio template and kept in sync by merging `upstream` (`alshedivat/al-folio`). `AGENTS.md` and the rest of this file are written for the al-folio starter repo itself; where they conflict with this section, **this section wins**:
+
+- **Baseurl is blank** — the site is served from the domain root. Do not set `baseurl: /al-folio` or pass `--baseurl /al-folio`. Preview is at `http://localhost:8080/` (Docker) or `http://localhost:4000/`.
+- **Local overrides are allowed.** The `_layouts/` / `_includes/` / `_sass/` stop sign and `npm run lint:style-contract` apply only to the starter repo. If you add an override, run `bundle exec al-folio upgrade overrides audit` and commit `.al-folio-overrides.yml`.
+- **Skip the starter's test suite** (`test/integration_*.sh`, Playwright visual tests) — they test al-folio's demo content. Validate this site with a build plus `bundle exec al-folio upgrade audit`.
+- **Deployment** is `.github/workflows/main.yml` (GitHub Pages via Actions) on `master`. Upstream's `deploy.yml` also exists.
+- **CV** lives in `_data/cv.yml` (RenderCV format, `cv_format: rendercv`); the PDF is the hand-maintained `assets/pdf/glampouras_CV.pdf`, not RenderCV output. Socials are in `_data/socials.yml`.
+- **Upstream sample content is deliberately removed** (sample posts, projects, books, teachings, demo pages, `featured_plugins.yml`, and the `render-cv`, `lighthouse-badger`, `update-tocs`, `update-citations`, `copilot-setup-steps`, `codeql` workflows). When merging upstream, keep them deleted rather than reintroducing them.
+
 @AGENTS.md
 
 `AGENTS.md` (imported above) is the **authoritative** agent entry point: change routing, the stop sign for gem-owned paths, the three silent failure modes, and the validated command set. Keep it short and ecosystem-neutral. Cross-repo architecture — the wrapper/tag/gem delegation table, feature gating, the v1 config contract, local overrides — lives in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md); area-to-gem ownership lives in [`docs/BOUNDARIES.md`](docs/BOUNDARIES.md).
