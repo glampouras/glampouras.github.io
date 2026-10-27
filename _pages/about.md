@@ -31,4 +31,4 @@ My areas of interest generally fall somewhere between Natural Language Processin
 
 Previously, I was a research associate at the University of Cambridge, University of Sheffield and University College London. I graduated and received my MSc and PhD from the Athens University of Economics and Business.
 
-In my spare time, I survive my cat and struggle to keep up with too many intestests, but I do enjoy reading fiction, playing games (board, video, and dungeon mastering TTRPGs), and (unfortunately rarely) paint.
+In my spare time, I survive my cat and struggle to keep up with too many interests, but I do enjoy reading fiction, playing games (board, video, and dungeon mastering TTRPGs), and (unfortunately rarely) paint.
