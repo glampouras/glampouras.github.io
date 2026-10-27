@@ -10,18 +10,18 @@ nav_order: 2
 <!-- Content lives in _data/open_source.yml -->
 
 <style>
-  .oss-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  .oss-list {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
   }
-  .oss-grid .card-title {
+  .oss-list .card-title {
     margin-bottom: 0.25rem;
   }
-  .oss-wide {
-    grid-column: 1 / -1;
-  }
   .oss-subgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
     margin-top: 1rem;
   }
   .oss-sub {
@@ -41,14 +41,18 @@ nav_order: 2
   .oss-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: 0.5rem;
     margin-top: 0.75rem;
+  }
+  .oss-links .btn {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.75rem;
   }
 </style>
 
-<div class="oss-grid">
+<div class="oss-list">
   {% for project in site.data.open_source %}
-    <div class="card h-100{% if project.subprojects %} oss-wide{% endif %}">
+    <div class="card">
       <div class="card-body">
         <h3 class="card-title">{{ project.title }}</h3>
         {% if project.venue %}<span class="badge">{{ project.venue }}</span>{% endif %}
@@ -67,7 +71,7 @@ nav_order: 2
           {% endfor %}
         </div>
         {% if project.subprojects %}
-          <div class="oss-grid oss-subgrid">
+          <div class="oss-subgrid">
             {% for sub in project.subprojects %}
               <div class="oss-sub">
                 <h4>{{ sub.title }}</h4>

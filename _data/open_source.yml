@@ -33,7 +33,7 @@
     - label: GitHub
       url: https://github.com/Formal-Math-Reasoning
       icon: fa-brands fa-github
-  # subprojects render as subcards inside this card, which then spans the full grid width
+  # subprojects render as subcards inside this card
   subprojects:
     - title: DRIFT
       venue: ICLR 2026
