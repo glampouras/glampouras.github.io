@@ -4,19 +4,22 @@
       <stop offset="0" stop-color="#3b82f6"/>
       <stop offset="1" stop-color="#1e3a8a"/>
     </linearGradient>
+    <clipPath id="left"><circle cx="48" cy="64" r="34"/></clipPath>
   </defs>
   <rect width="128" height="128" rx="28" fill="url(#g)"/>
-  <!-- natural language: ragged text lines -->
-  <g stroke="#fff" stroke-opacity="0.55" stroke-width="7" stroke-linecap="round">
-    <path d="M20 40 H50"/>
-    <path d="M20 56 H44"/>
-    <path d="M20 72 H52"/>
-    <path d="M20 88 H38"/>
+  <!-- two embedding spaces, partially shared -->
+  <circle cx="48" cy="64" r="34" fill="#fff" fill-opacity="0.92"/>
+  <circle cx="80" cy="64" r="34" fill="#93c5fd" fill-opacity="0.92"/>
+  <circle cx="80" cy="64" r="34" fill="#c7dcff" clip-path="url(#left)"/>
+  <!-- language side: prose -->
+  <g stroke="#1e3a8a" stroke-width="4" stroke-linecap="round">
+    <path d="M26 54 H44"/>
+    <path d="M26 64 H40"/>
+    <path d="M26 74 H44"/>
   </g>
-  <!-- ... becomes code -->
-  <g fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M74 44 L60 64 L74 84"/>
-    <path d="M96 44 L110 64 L96 84"/>
-    <path d="M90 38 L80 90" stroke="#93c5fd"/>
+  <!-- code side: brackets -->
+  <g fill="none" stroke="#1e3a8a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 52 L82 64 L90 76"/>
+    <path d="M100 52 L108 64 L100 76"/>
   </g>
 </svg>
