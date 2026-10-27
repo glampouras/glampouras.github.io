@@ -157,10 +157,10 @@
               {% if section_title == 'Education' %}
                 {% assign entries = section_entries | al_cv_sort_by_date %}
                 {% include cv/education.liquid %}
-              {% comment %}
-                Site override (local copy of al_folio_cv's render.liquid): awards no longer get their own
-                layout; they fall through to the dated-section rule below with the other dated sections.
-              {% endcomment %}
+                {% comment %}
+                  Site override (local copy of al_folio_cv's render.liquid): awards no longer get their own
+                  layout; they fall through to the dated-section rule below with the other dated sections.
+                {% endcomment %}
               {% elsif section_title == 'Publications' %}
                 {% assign entries = section_entries %}
                 {% include cv/publications.liquid %}
