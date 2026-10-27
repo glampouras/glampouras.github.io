@@ -1,0 +1,93 @@
+# Projects listed on the "open source code" page (_pages/open-source.md), newest first.
+# Each project: title, venue, description, optional repo label, links (label/url/icon) and papers (label/arxiv).
+# Icons: fa-solid fa-globe (website), fa-brands fa-github (code), fa-solid fa-database (dataset),
+#        fa-solid fa-trophy (leaderboard), fa-solid fa-toolbox (tool)
+
+- title: DeepSynth
+  venue: ICLR 2026
+  description: A benchmark of 120 real-world tasks testing whether AI agents can gather, combine, and reason over information from multiple sources.
+  links:
+    - label: Website
+      url: https://agentdeepsynthesis.github.io/deepsynth.github.io/
+      icon: fa-solid fa-globe
+    - label: Code
+      url: https://github.com/agentdeepsynthesis/deepsynth-bench
+      icon: fa-brands fa-github
+    - label: Dataset
+      url: https://huggingface.co/datasets/DeepSynthesisTeam/deepsynth-bench
+      icon: fa-solid fa-database
+    - label: Leaderboard
+      url: https://huggingface.co/spaces/DeepSynthesisTeam/deepsynth-leaderboard
+      icon: fa-solid fa-trophy
+  papers:
+    - label: Paper
+      arxiv: 2602.21143
+
+- title: Formal Mathematical Reasoning
+  venue: ICLR 2026
+  description: Bridging natural language mathematics and machine-verifiable proofs through autoformalisation.
+  links:
+    - label: Website
+      url: https://formal-math-reasoning.github.io/
+      icon: fa-solid fa-globe
+    - label: GitHub
+      url: https://github.com/Formal-Math-Reasoning
+      icon: fa-brands fa-github
+    - label: LeanFlow
+      url: https://github.com/Formal-Math-Reasoning/leanflow
+      icon: fa-solid fa-toolbox
+  papers:
+    - label: DRIFT
+      arxiv: 2510.10815
+    - label: Conjecturing
+      arxiv: 2510.11986
+    - label: TopoAlign
+      arxiv: 2510.11944
+
+- title: DReSD
+  venue: ACL Findings 2025
+  repo: huawei-noah/HEBO
+  description: Dense Retrieval for Speculative Decoding, using approximate nearest neighbour search over contextualised token embeddings.
+  links:
+    - label: Code
+      url: https://github.com/huawei-noah/HEBO/tree/DReSD
+      icon: fa-brands fa-github
+  papers:
+    - label: Paper
+      arxiv: 2502.15572
+
+- title: SparsePO
+  venue: EMNLP Findings 2025
+  repo: huawei-noah/HEBO
+  description: Controlling preference alignment of LLMs via sparse token-level masks over KL divergence and reward.
+  links:
+    - label: Code
+      url: https://github.com/huawei-noah/HEBO/tree/master/SparsePO
+      icon: fa-brands fa-github
+  papers:
+    - label: Paper
+      arxiv: 2410.05102
+
+- title: Text-to-Code MRPT
+  venue: EACL 2024
+  repo: huawei-noah/noah-research
+  description: Text-to-code generation with modality-relative pre-training.
+  links:
+    - label: Code
+      url: https://github.com/huawei-noah/noah-research/tree/master/NLP/text2code_mrpt
+      icon: fa-brands fa-github
+  papers:
+    - label: Paper
+      arxiv: 2402.05783
+
+- title: HumanRankEval
+  venue: NAACL 2024
+  repo: huawei-noah/noah-research
+  description: Automatic evaluation of LMs as conversational assistants.
+  links:
+    - label: Code
+      url: https://github.com/huawei-noah/noah-research/tree/master/NLP/HumanRankEval
+      icon: fa-brands fa-github
+  papers:
+    - label: Paper
+      arxiv: 2405.09186
