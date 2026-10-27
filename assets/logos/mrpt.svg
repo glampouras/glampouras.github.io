@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Text-to-Code MRPT logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <!-- natural language: ragged text lines -->
+  <g stroke="#fff" stroke-opacity="0.55" stroke-width="7" stroke-linecap="round">
+    <path d="M20 40 H50"/>
+    <path d="M20 56 H44"/>
+    <path d="M20 72 H52"/>
+    <path d="M20 88 H38"/>
+  </g>
+  <!-- ... becomes code -->
+  <g fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M74 44 L60 64 L74 84"/>
+    <path d="M96 44 L110 64 L96 84"/>
+    <path d="M90 38 L80 90" stroke="#93c5fd"/>
+  </g>
+</svg>

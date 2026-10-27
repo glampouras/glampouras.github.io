@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Formal Mathematical Reasoning logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c0354b"/>
+      <stop offset="1" stop-color="#6e1424"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <!-- "for all" quantifier -->
+  <g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 30 L52 90 L74 30"/>
+    <path d="M38 52 H66"/>
+  </g>
+  <!-- turnstile (proves), with a small check: the statement is verified -->
+  <g fill="none" stroke="#ffd7dd" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M84 62 V98"/>
+    <path d="M84 80 H102"/>
+  </g>
+  <circle cx="98" cy="40" r="13" fill="#fff"/>
+  <path d="M92 40 L96.5 44.5 L104 36" fill="none" stroke="#8f1d30" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

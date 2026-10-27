@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="HumanRankEval logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#9a3412"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <!-- ranking podium: 2nd, 1st, 3rd -->
+  <g fill="#fff">
+    <rect x="22" y="72" width="26" height="34" rx="4" fill-opacity="0.8"/>
+    <rect x="51" y="56" width="26" height="50" rx="4"/>
+    <rect x="80" y="82" width="26" height="24" rx="4" fill-opacity="0.65"/>
+  </g>
+  <g fill="#9a3412" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="16" text-anchor="middle">
+    <text x="35" y="95">2</text>
+    <text x="64" y="87">1</text>
+    <text x="93" y="100">3</text>
+  </g>
+  <!-- human judgement: a person above the winner -->
+  <circle cx="64" cy="24" r="8" fill="#fff"/>
+  <path d="M50 50 Q64 30 78 50 Z" fill="#fff"/>
+</svg>

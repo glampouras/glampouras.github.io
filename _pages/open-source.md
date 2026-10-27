@@ -63,6 +63,35 @@ nav_order: 2
     margin-bottom: 0.25rem;
   }
 
+  /* logo beside the title block */
+  .oss-head {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .oss-head-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .oss-logo {
+    flex: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 22%;
+    object-fit: cover;
+  }
+  .oss-featured .oss-logo {
+    width: 84px;
+    height: 84px;
+  }
+  @media (max-width: 576px) {
+    .oss-logo,
+    .oss-featured .oss-logo {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
   /* topic chips */
   .oss-tags {
     margin: 0.4rem 0 0.6rem;
@@ -143,14 +172,21 @@ nav_order: 2
   {% for project in site.data.open_source %}
     <div class="card oss-card{% if project.featured %} oss-featured{% endif %}">
       <div class="card-body">
-        {% if project.featured %}<div class="oss-eyebrow">{{ project.featured }}</div>{% endif %}
-        <h3 class="card-title">{{ project.title }}</h3>
-        {% if project.venue %}<span class="badge">{{ project.venue }}</span>{% endif %}
-        {% if project.tags %}
-          <div class="oss-tags">
-            {% for tag in project.tags %}<span class="oss-tag">{{ tag }}</span>{% endfor %}
+        <div class="oss-head">
+          {% if project.logo %}
+            <img class="oss-logo" src="{{ project.logo | prepend: '/assets/logos/' | relative_url }}" alt="{{ project.title }} logo" loading="lazy">
+          {% endif %}
+          <div class="oss-head-text">
+            {% if project.featured %}<div class="oss-eyebrow">{{ project.featured }}</div>{% endif %}
+            <h3 class="card-title">{{ project.title }}</h3>
+            {% if project.venue %}<span class="badge">{{ project.venue }}</span>{% endif %}
+            {% if project.tags %}
+              <div class="oss-tags">
+                {% for tag in project.tags %}<span class="oss-tag">{{ tag }}</span>{% endfor %}
+              </div>
+            {% endif %}
           </div>
-        {% endif %}
+        </div>
         <p class="card-text">{{ project.description }}</p>
         <div class="oss-links">
           {% for link in project.links %}
