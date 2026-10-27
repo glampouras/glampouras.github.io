@@ -5,6 +5,16 @@
 # Icons: fa-solid fa-globe (website), fa-brands fa-github (code), fa-solid fa-database (dataset),
 #        fa-solid fa-trophy (leaderboard), fa-solid fa-toolbox (tool), fa-solid fa-cube (model)
 
+- title: Chelis
+  description: The verified tensor language for agent-written code.
+  links:
+    - label: Website
+      url: https://chelis.ch/
+      icon: fa-solid fa-globe
+    - label: Code
+      url: https://github.com/Chelis-Lang/chelis
+      icon: fa-brands fa-github
+
 - title: DeepSynth
   venue: ICLR 2026
   description: A benchmark of 120 real-world tasks testing whether AI agents can gather, combine, and reason over information from multiple sources.
