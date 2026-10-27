@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="SparsePO logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#2e2a7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <!-- a sequence of tokens; a sparse mask lights up only the ones that matter -->
+  <g fill="#fff" fill-opacity="0.3">
+    <rect x="20" y="58" width="10" height="44" rx="5"/>
+    <rect x="50" y="70" width="10" height="32" rx="5"/>
+    <rect x="65" y="62" width="10" height="40" rx="5"/>
+    <rect x="95" y="66" width="10" height="36" rx="5"/>
+  </g>
+  <g fill="#fbbf24">
+    <rect x="35" y="34" width="10" height="68" rx="5"/>
+    <rect x="80" y="26" width="10" height="76" rx="5"/>
+  </g>
+  <!-- preference: the highlighted tokens get the weight -->
+  <g fill="#fbbf24">
+    <circle cx="40" cy="22" r="5"/>
+    <circle cx="85" cy="14" r="5"/>
+  </g>
+</svg>

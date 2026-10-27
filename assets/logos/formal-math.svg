@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Formal Mathematical Reasoning logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c0354b"/>
+      <stop offset="1" stop-color="#6e1424"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <!-- natural language: a speech bubble of prose -->
+  <path d="M22 18 H60 a9 9 0 0 1 9 9 V47 a9 9 0 0 1 -9 9 H34 L22 67 V56 a9 9 0 0 1 -9 -9 V27 a9 9 0 0 1 9 -9 Z" fill="#fff" fill-opacity="0.92"/>
+  <g stroke="#a62639" stroke-width="4" stroke-linecap="round">
+    <path d="M22 30 H58"/>
+    <path d="M22 38 H52"/>
+    <path d="M22 46 H44"/>
+  </g>
+  <!-- autoformalisation: translate -->
+  <path d="M40 74 C40 94 50 100 62 98" fill="none" stroke="#ffd7dd" stroke-width="5" stroke-linecap="round"/>
+  <path d="M56 91 L63 98 L56 105" fill="none" stroke="#ffd7dd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- formal statement: turnstile (provable) -->
+  <rect x="68" y="52" width="46" height="58" rx="9" fill="#fff"/>
+  <g stroke="#a62639" stroke-width="6" stroke-linecap="round">
+    <path d="M80 66 V96"/>
+    <path d="M80 81 H100"/>
+  </g>
+  <!-- proved seal -->
+  <circle cx="110" cy="52" r="12" fill="#ffd166" stroke="#6e1424" stroke-width="2"/>
+  <path d="M104.5 52 L108.5 56 L115.5 48.5" fill="none" stroke="#6e1424" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
