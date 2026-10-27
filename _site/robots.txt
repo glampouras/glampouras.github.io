@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://glampouras.github.io/sitemap.xml
